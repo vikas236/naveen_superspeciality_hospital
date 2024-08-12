@@ -5,6 +5,7 @@
   position: fixed;
   inset: 0;
   display: none;
+  z-index: 1;
 }
 
 .nav_wall.active {
@@ -224,19 +225,18 @@
 @media only screen and (max-width: 1250px) {
   .nav0 {
     width: 100vw;
-    margin: 0;
     padding: 0 35px;
     margin-top: 50px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+  }
+
+  .nav_wall {
+    top: 0px;
   }
 
   .nav0 .ham.active {
     position: fixed;
-    right: 275px;
-    top: -13px;
-    cursor: pointer;
+    right: 265px;
+    top: 35px;
     transition: 0.5s;
   }
 
@@ -261,7 +261,7 @@
   }
 
   .nav0 .ham.active {
-    top: 7px;
+    top: 25px;
   }
 
   .nav1 .wrapper {
@@ -293,7 +293,7 @@
 
   .nav0 .ham.active {
     right: calc(100dvw - 85px);
-    top: 0px;
+    top: 20px;
   }
 
   .nav1 ul .link {
