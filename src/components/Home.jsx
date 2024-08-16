@@ -1,37 +1,30 @@
 // src/components/Home.js
 import React from "react";
 import "../css/home.css";
-import Doctor from "../images/doctor.jpg";
 
 const Home = () => {
   return (
     <div className="home">
-      {/* <div className="hero">
-        <div className="content">
-          <h1>Comprehensive Healthcare Services for Your Family</h1>
+      <div className="hero">
+        <div className="box a">
+          <h1>
+            Your Trusted <span>Healthcare</span> Center
+          </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique.
+            Embrace a world of comprehensive healthcare where your well-being
+            takes center stage. At Meca, we're dedicated to providing you with
+            personalized medical services.
           </p>
-          <div className="contact">
-            <div>
-              <i className="bx bxs-location-plus"></i>
-              <span>5900 Balcones Drive Texas USA 79711</span>
-            </div>
-            <div>
-              <i className="bx bxs-time-five"></i>
-              <span>Opening House Sat- Fri:8:00-20:00</span>
-            </div>
-          </div>
-          <div className="button">
-            <button>Browse our Services</button>
-            <button>Book an appointment</button>
-          </div>
+          <button>
+            <i class="bx bx-right-arrow-alt"></i>Learn More
+          </button>
         </div>
-        <div className="hero_image">
-          <img src={Doctor} alt="" />
-        </div>
-      </div> */}
+        <div className="box b"></div>
+        <div className="box c"></div>
+        <div className="box d"></div>
+        <div className="box e"></div>
+        <div className="box f"></div>
+      </div>
     </div>
   );
 };

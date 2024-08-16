@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "../css/nav.css";
-import Logo from "../images/logo.svg";
+import Logo from "../images/logo1.png";
 
 function Nav() {
   document.addEventListener("DOMContentLoaded", () => {

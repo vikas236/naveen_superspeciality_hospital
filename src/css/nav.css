@@ -14,7 +14,8 @@
 
 .nav1 {
   width: 350px;
-  min-height: 100vh;
+  min-height: calc(100dvh - 50px);
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,16 +23,17 @@
   overflow: hidden;
   position: fixed;
   right: -350px;
-  top: 0;
+  top: 25px;
   z-index: 2;
   background: white;
   transition: 0.33s ease-out;
   transition-delay: 0;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 25px;
 }
 
 .nav1.active {
-  right: 0;
+  right: 25px;
 }
 
 .nav1 .wrapper {
@@ -137,13 +139,14 @@
 }
 
 .nav0 {
-  width: 1250px;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 2;
-  margin-top: 125px;
+  margin-top: 25px;
   transition: 0.3s;
+  padding: 0 100px;
 }
 
 .nav0 img.logo {
@@ -163,6 +166,9 @@
   transition-delay: 0s;
   padding: 0 17px;
   border-radius: 50%;
+  position: absolute;
+  right: 100px;
+  top: 35px;
 }
 
 .nav0 .ham .bar {
@@ -194,9 +200,9 @@
 
 .nav0 .ham.active {
   position: fixed;
-  top: 35px;
-  right: 265px;
-  transition: 0.6s;
+  top: 60px;
+  right: 290px;
+  transition: 0.46s;
   transition-delay: 0.05s;
   z-index: 3;
 }
@@ -225,8 +231,9 @@
 @media only screen and (max-width: 1250px) {
   .nav0 {
     width: 100vw;
-    padding: 0 35px;
+    padding: 0 50px;
     margin-top: 50px;
+    border: 1px solid black;
   }
 
   .nav_wall {
@@ -242,7 +249,8 @@
 
   .nav0 .ham {
     position: absolute;
-    right: 35px;
+    right: 50px;
+    top: 75px;
   }
 }
 
@@ -257,7 +265,8 @@
 
   .nav0 .ham {
     position: absolute;
-    right: 25px;
+    right: 35px;
+    top: 35px;
   }
 
   .nav0 .ham.active {
@@ -289,6 +298,11 @@
   .nav0 img.inactive {
     opacity: 0;
     transition-delay: 0s;
+  }
+
+  .nav0 .ham {
+    top: 25px;
+    right: 25px;
   }
 
   .nav0 .ham.active {
