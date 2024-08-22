@@ -7,6 +7,7 @@ import handwash_image from "../images/handwash_image.png";
 import filler from "../images/filler.jpg";
 import filler0 from "../images/filler0.png";
 import partner_logo from "../images/logo_filler.png";
+import nasob12 from "../images/nasob12.png";
 
 const Home = () => {
   return (
@@ -45,7 +46,7 @@ const Home = () => {
           </button>
         </div>
         <div className="box c">
-          <img src={medicine_container} alt="medicine container" />
+          <img src={nasob12} alt="medicine container" />
           <img src={string_shape} className="string_shape" alt="string shape" />
         </div>
         <div className="box d">
