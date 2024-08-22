@@ -22,6 +22,10 @@
 .hero .box {
   border-radius: 15px;
   background: #97b1ab;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero .box.a {
@@ -61,9 +65,8 @@
 }
 
 .hero .box.a {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: normal;
   padding: 0 75px;
 }
 
@@ -95,7 +98,7 @@
   font-size: 14px;
   align-items: center;
   justify-content: center;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .hero .box.a button:hover {
@@ -108,8 +111,283 @@
   border-radius: 50%;
   margin-right: 12px;
   font-size: 20px;
+  transition: 0.5s;
 }
 
 .hero .box.a button:hover i {
   color: #998099;
+}
+
+.hero .box.b {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero .box.b h1 {
+  width: fit-content;
+  height: fit-content;
+  color: white;
+  font-size: 94px;
+  font-weight: 900;
+  margin-top: 115px;
+}
+
+.hero .box.b .box_award {
+  width: 140px;
+  height: 135px;
+  background: linear-gradient(135deg, #fff, #d6cdd6, #ffd1dc);
+  border: 1px solid white;
+  background-repeat: no-repeat;
+  position: absolute;
+  border-radius: 20px;
+  inset: 30px;
+  padding: 8px;
+}
+
+.hero .box.b .box_award .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 20px;
+  border: 1px solid white;
+  overflow: hidden;
+}
+
+.hero .box.b .box_award .stars {
+  width: 100%;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0;
+}
+
+.hero .box.b .box_award i {
+  margin: 0 1px;
+}
+
+.hero .box.b .box_award span {
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.hero .box.b .box_award span.year {
+  width: 100%;
+  background: white;
+  letter-spacing: 7px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 7px 0;
+  border-radius: 25px;
+}
+
+.hero .box.b button {
+  position: absolute;
+  bottom: 30px;
+  right: 25px;
+  background: #020d2b;
+  border: none;
+  padding: 11px 25px;
+  border-radius: 25px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: 0.5s;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.hero .box.b button i {
+  color: #020d2b;
+  background: white;
+  padding: 2px;
+  border-radius: 50%;
+  margin-right: 12px;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+.hero .box.b button:hover {
+  background: #2865be;
+}
+
+.hero .box.b button:hover i {
+  color: #2865be;
+}
+
+.hero .box.c img {
+  width: 100%;
+}
+
+.hero .box.c img.string_shape {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -88%;
+}
+
+.hero .box.e {
+  overflow: hidden;
+  padding: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+  background: #ccd9d6;
+}
+
+.hero .box.e img {
+  width: 100%;
+  height: 70%;
+  border-radius: 20px;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.hero .box.e .content {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero .box.e p {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.hero .box.e span {
+  background: white;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  color: #51aaa2;
+}
+
+.hero .box.e span i {
+  background: #51aaa2;
+  color: white;
+  padding: 12px;
+  font-size: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.hero .box.e span a {
+  letter-spacing: 2px;
+  margin-left: 3px;
+  text-decoration: none;
+  padding-right: 15px;
+  font-weight: 800;
+  padding-left: 2px;
+  color: #51aaa2;
+}
+
+.hero .box.f {
+  padding: 30px;
+}
+
+.hero .box.f .content {
+  width: 265px;
+  height: calc(100% - 60px);
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  left: 30px;
+  top: 27px;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.hero .box.f p {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.hero .box.f span {
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.hero .box.f hr {
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+.hero .box.f button {
+  color: white;
+  background: #998099;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 25px;
+  border-radius: 25px;
+  margin-top: 35px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.hero .box.f button i {
+  color: #998099;
+  background: white;
+  border-radius: 50%;
+  margin-right: 11px;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.hero .box.f button:hover {
+  background: #2865be;
+}
+
+.hero .box.f button:hover i {
+  color: #2865be;
+}
+
+/* parter logos */
+
+.partner_logos {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.partner_logos .partner {
+  display: flex;
+  position: relative;
+}
+
+.partner_logos .partner img {
+  object-fit: contain;
+}
+
+.partner_logos .partner h1 {
+  font-weight: 500;
+  font-size: 26px;
+  margin-left: -30px;
 }
