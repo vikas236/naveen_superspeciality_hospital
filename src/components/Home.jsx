@@ -17,6 +17,11 @@ import arrow from "../images/arrow.svg";
 import model from "../images/hair_model.jpeg";
 import male_doctor from "../images/male_doctor.jpg";
 import female_doctor from "../images/female_doctor.jpg";
+import certified from "../images/certified.png";
+import certified0 from "../images/certified0.jpg";
+import certified1 from "../images/certified1.jpg";
+import certified2 from "../images/certified2.png";
+import certified3 from "../images/certified3.jpg";
 
 const Home = () => {
   return (
@@ -39,12 +44,12 @@ function HeroSection() {
     <div className="hero">
       <div className="box a">
         <h1>
-          Your Trusted <span>Healthcare</span> Center
+          Your trusted center for <span>aesthetic excellence</span>
         </h1>
         <p>
-          Embrace a world of comprehensive healthcare where your well-being
-          takes center stage. At Meca, we're dedicated to providing you with
-          personalized medical services.
+          Experience a realm of specialized care where your transformation is
+          our priority. At Meca, we're committed to delivering tailored
+          aesthetic and dental services
         </p>
         <button>
           <i className="bx bx-right-arrow-alt"></i>Learn More
@@ -64,7 +69,7 @@ function HeroSection() {
             <span className="year">2024</span>
           </div>
         </div>
-        <h1>Healthcare</h1>
+        <h1>Aesthetic care</h1>
         <button>
           <i className="bx bx-right-arrow-alt"></i>Book a consultation
         </button>
@@ -80,11 +85,11 @@ function HeroSection() {
         <img src={filler} alt="" />
         <div className="content">
           <p>
-            Welcome to the hospital we are open from <b>0 to 1</b>
+            Welcome to the hospital we are open from <b>10AM to 6PM</b>
           </p>
           <span>
             <i className="bx bxs-phone-call"></i>
-            CALL: <a href="tel:1010101010">+01010 10101</a>
+            CALL: <a href="tel:9550937897">+91 95509 37897</a>
           </span>
         </div>
       </div>
@@ -96,7 +101,7 @@ function HeroSection() {
           </span>
           <hr />
           <button>
-            <i className="bx bx-right-arrow-alt"></i>Shop
+            <i className="bx bx-right-arrow-alt"></i>Shop now
           </button>
         </div>
         <img src={ferrous} alt="" />
@@ -106,35 +111,14 @@ function HeroSection() {
 }
 
 function PartnerLogos() {
-  window.addEventListener("DOMContentLoaded", () => {
-    const images = document.querySelectorAll(".partner_logos img");
-    images.forEach(
-      (e, i) => (e.style.transform = `rotate(${Math.random() * 360}deg)`)
-    );
-  });
-
   return (
     <div className="partner_logos">
-      <div className="partner">
-        <img src={partner_logo} alt="" />
-        <h1>Name</h1>
-      </div>
-      <div className="partner">
-        <img src={partner_logo} alt="" />
-        <h1>Name</h1>
-      </div>
-      <div className="partner">
-        <img src={partner_logo} alt="" />
-        <h1>Name</h1>
-      </div>
-      <div className="partner">
-        <img src={partner_logo} alt="" />
-        <h1>Name</h1>
-      </div>
-      <div className="partner">
-        <img src={partner_logo} alt="" />
-        <h1>Name</h1>
-      </div>
+      <span>CERTIFIED BY</span>
+      <img className="partner" src={certified} alt="" />
+      <img className="partner" src={certified0} alt="" />
+      <img className="partner" src={certified1} alt="" />
+      <img className="partner" src={certified2} alt="" />
+      <img className="partner" src={certified3} alt="" />
     </div>
   );
 }

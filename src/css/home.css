@@ -381,26 +381,32 @@
   width: 1350px;
   overflow: hidden;
   padding: 100px 0;
+  padding-top: 150px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   gap: 50px;
-}
-
-.partner_logos .partner {
-  display: flex;
   position: relative;
 }
 
-.partner_logos .partner img {
+.partner_logos span {
+  font-size: 14px;
+  font-weight: 700;
+  color: #417ed7;
+  position: absolute;
+  top: 95px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.partner_logos .partner {
+  width: 100px;
   object-fit: contain;
 }
 
-.partner_logos .partner h1 {
-  font-weight: 500;
-  font-size: 26px;
-  margin-left: 25px;
-  display: none;
+.partner_logos .partner:nth-child(4) {
+  color: rgba(0, 0, 0, 0.05);
+  padding: 5px;
 }
 
 /* message */
