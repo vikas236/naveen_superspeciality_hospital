@@ -332,8 +332,14 @@ nav .ham.active .bar::after {
 
 @media only screen and (max-width: 556px) {
   .nav1 {
-    width: calc(100vw - 50px);
+    width: calc(100vw - 20px);
+    height: calc(100dvh - 20px);
     right: -100vw;
+    top: 10px;
+  }
+
+  .nav1.active {
+    right: 10px;
   }
 
   .nav1 .wrapper .logo {
@@ -343,7 +349,7 @@ nav .ham.active .bar::after {
   }
 
   .nav1 ul li {
-    width: calc(100vw - 107px);
+    width: calc(100vw - 76px);
   }
 
   .nav1 ul .link {
@@ -374,7 +380,7 @@ nav .ham.active .bar::after {
   }
 
   nav .ham.active {
-    right: 50px;
+    right: 28px;
     top: 50px;
   }
 
