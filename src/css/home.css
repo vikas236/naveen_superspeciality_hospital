@@ -1342,6 +1342,7 @@
   .partner_logos {
     width: 100vw;
     padding: 100px 50px;
+    padding-top: 145px;
   }
 
   .home .message {
@@ -1519,6 +1520,7 @@
   .partner_logos {
     width: 100vw;
     padding: 100px 50px;
+    padding-top: 150px;
   }
 
   .home .message {
@@ -1650,6 +1652,7 @@
   .partner_logos {
     width: 693px;
     padding: 100px 0;
+    padding-top: 145px;
   }
 
   .home .message {
@@ -1786,6 +1789,11 @@
     flex-wrap: wrap;
     row-gap: 55px;
     padding: 85px 0;
+    padding-top: 150px;
+  }
+
+  .partner_logos span {
+    top: 80px;
   }
 
   .home .message {
@@ -1971,6 +1979,7 @@
     width: 100vw;
     row-gap: 55px;
     padding: 85px 13px;
+    padding-top: 125px;
   }
 
   .home .message {
