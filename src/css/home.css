@@ -133,6 +133,7 @@
   font-size: 5rem;
   font-weight: 900;
   margin-top: 115px;
+  text-align: ce;
 }
 
 .hero .box.b .box_award {
@@ -384,8 +385,8 @@
   padding-top: 150px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  gap: 50px;
+  justify-content: center;
+  gap: 100px;
   position: relative;
 }
 
@@ -1519,8 +1520,12 @@
 
   .partner_logos {
     width: 100vw;
-    padding: 100px 50px;
+    padding: 100px 75px;
     padding-top: 150px;
+  }
+
+  .partner_logos .partner {
+    width: 75px;
   }
 
   .home .message {
@@ -1653,6 +1658,7 @@
     width: 693px;
     padding: 100px 0;
     padding-top: 145px;
+    gap: 50px;
   }
 
   .home .message {
@@ -1788,12 +1794,16 @@
     width: 532px;
     flex-wrap: wrap;
     row-gap: 55px;
-    padding: 85px 0;
+    padding: 85px 25px;
     padding-top: 150px;
   }
 
   .partner_logos span {
     top: 80px;
+  }
+
+  .partner_logos .partner {
+    width: 65px;
   }
 
   .home .message {

@@ -19,6 +19,8 @@ function Nav() {
     <nav>
       <Nav0 />
       <Nav1 />
+      <Ham />
+      <div className="nav_wall"></div>
     </nav>
   );
 }
@@ -31,8 +33,6 @@ function Nav0() {
         className="logo"
         alt="naveen superspeciality hospital logo"
       />
-      <Ham />
-      <div className="nav_wall"></div>
     </div>
   );
 }
@@ -40,7 +40,6 @@ function Nav0() {
 function Nav1() {
   return (
     <div className="nav1">
-      <div className="nav_wall"></div>
       <div className="wrapper">
         <div className="left">
           <Link to="/" className="logo">
