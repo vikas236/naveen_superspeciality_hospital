@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "../css/nav.css";
 import Logo from "../images/logo1.png";
+import tooth_icon from "../images/tooth_icon.svg";
 
 function Nav() {
   document.addEventListener("DOMContentLoaded", () => {
@@ -72,6 +73,30 @@ function NavLinks() {
         <Link to="/contact" className="link">
           <i className="bx bxs-contact"></i>
           Contact
+        </Link>
+      </li>
+      <li>
+        <Link to="/contact" className="link">
+          <i class="bx bxs-notepad"></i>
+          Treatments
+        </Link>
+      </li>
+      <li>
+        <Link to="/contact" className="link">
+          <i class="bx bx-male-sign"></i>
+          Male Hair Loss
+        </Link>
+      </li>
+      <li>
+        <Link to="/contact" className="link">
+          <i class="bx bx-female-sign"></i>
+          Female Hair Loss
+        </Link>
+      </li>
+      <li>
+        <Link to="/contact" className="link">
+          <img src={tooth_icon} alt="" />
+          Dental
         </Link>
       </li>
     </ul>

@@ -2,10 +2,6 @@
 import React from "react";
 import "../css/home.css";
 import string_shape from "../images/string_shape.png";
-import handwash_image from "../images/handwash_image.png";
-import filler from "../images/filler.jpg";
-import partner_logo from "../images/logo_filler.png";
-import nasob12 from "../images/nasob12.png";
 import ferrous from "../images/ferrous.png";
 import paper_clip from "../images/paper_clip.jpg";
 import hair from "../images/hair_follicle.svg";
@@ -19,9 +15,10 @@ import male_doctor from "../images/male_doctor.jpg";
 import female_doctor from "../images/female_doctor.jpg";
 import certified from "../images/certified.png";
 import certified0 from "../images/certified0.jpg";
-import certified1 from "../images/certified1.jpg";
-import certified2 from "../images/certified2.png";
 import certified3 from "../images/certified3.jpg";
+import smile from "../images/wide_smile.webp";
+import before_fue from "../images/before_fue_transplant_nobg.png";
+import after_fue from "../images/after_fue_transplant_nobg.png";
 
 const Home = () => {
   return (
@@ -44,12 +41,12 @@ function HeroSection() {
     <div className="hero">
       <div className="box a">
         <h1>
-          Your trusted center for <span>aesthetic excellence</span>
+          Your trusted center for <span>hair transplantation</span>
         </h1>
         <p>
-          Experience a realm of specialized care where your transformation is
-          our priority. At Meca, we're committed to delivering tailored
-          aesthetic and dental services
+          At our center, we offer expert hair transplantation with a focus on
+          natural results. Trust us to help you regain confidence with
+          personalized care and advanced techniques
         </p>
         <button>
           <i className="bx bx-right-arrow-alt"></i>Learn More
@@ -69,27 +66,54 @@ function HeroSection() {
             <span className="year">2024</span>
           </div>
         </div>
-        <h1>Aesthetic care</h1>
+        <h1>Why Us</h1>
+        <ul className="advantages">
+          <li>
+            <i class="bx bxs-badge-check"></i>certified maxillofacial surgeon
+          </li>
+          <li>
+            <i class="bx bxs-badge-check"></i>90% graft survival rate
+          </li>
+          <li>
+            <i class="bx bxs-badge-check"></i>Experience exceptional hair
+            transplantation, following the highest international protocols for
+            safety and precision
+          </li>
+          <li>
+            <i class="bx bxs-badge-check"></i>certified cole instruments (usa)
+            usage
+          </li>
+        </ul>
         <button>
           <i className="bx bx-right-arrow-alt"></i>Book a consultation
         </button>
       </div>
       <div className="box c">
-        <img src={nasob12} alt="medicine container" />
+        <h1>Fue Hair Transplant</h1>
         <img src={string_shape} className="string_shape" alt="string shape" />
+        <img src={before_fue} alt="" />
+        <img src={after_fue} alt="" />
       </div>
       <div className="box d">
-        <img src={handwash_image} alt="" />
+        <img src={smile} alt="" />
+        <h1>creating beautiful smiles everyday</h1>
+        <span>DR.Naveen's Dental Clinic</span>
       </div>
       <div className="box e">
-        <img src={filler} alt="" />
         <div className="content">
           <p>
-            Welcome to the hospital we are open from <b>10AM to 6PM</b>
+            Call for <b>Expert Hair Transplant Advice</b>
           </p>
           <span>
             <i className="bx bxs-phone-call"></i>
             CALL: <a href="tel:9550937897">+91 95509 37897</a>
+          </span>
+          <p>
+            Call us for your dental care <b>at</b>
+          </p>
+          <span>
+            <i className="bx bxs-phone-call"></i>
+            CALL: <a href="tel:6309737897">+91 63097 37897</a>
           </span>
         </div>
       </div>
@@ -116,8 +140,6 @@ function PartnerLogos() {
       <span>CERTIFIED BY</span>
       <img className="partner" src={certified} alt="" />
       <img className="partner" src={certified0} alt="" />
-      <img className="partner" src={certified1} alt="" />
-      <img className="partner" src={certified2} alt="" />
       <img className="partner" src={certified3} alt="" />
     </div>
   );

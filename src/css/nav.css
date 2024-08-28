@@ -63,10 +63,8 @@ nav {
 
 .nav1 .wrapper .logo {
   height: 65px;
-  padding-left: 27px;
   position: relative;
-  margin-left: auto;
-  margin-right: 27px;
+  margin-left: 120px;
 }
 
 .nav1 .wrapper img {
@@ -87,19 +85,23 @@ nav {
   position: relative;
 }
 
+.nav1 ul li {
+  width: 290px;
+}
+
 .nav1 ul .link {
-  width: 255px;
+  width: 100%;
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
   transition: 0.3s;
   display: flex;
-  padding: 17px 42px;
-  padding-right: 100%;
+  padding: 17px 54px;
   text-align: start;
   color: rgba(0, 0, 0, 0.6);
   position: relative;
   border-radius: 10px;
+  display: inline-block;
 }
 
 .nav1 ul .link.active,
@@ -110,12 +112,21 @@ nav {
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
-.nav1 ul .link i {
+.nav1 ul .link i,
+.nav1 ul .link img {
   position: absolute;
   left: 12px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-60%);
   font-size: 22px;
+}
+
+.nav1 ul .link img {
+  width: 20x;
+  padding: 0;
+  margin-right: 0;
+  left: 5px;
+  transform: translateY(-45%);
 }
 
 .nav1 button {
