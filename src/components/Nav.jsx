@@ -77,19 +77,19 @@ function NavLinks() {
       </li>
       <li>
         <Link to="/contact" className="link">
-          <i class="bx bxs-notepad"></i>
+          <i className="bx bxs-notepad"></i>
           Treatments
         </Link>
       </li>
       <li>
         <Link to="/contact" className="link">
-          <i class="bx bx-male-sign"></i>
+          <i className="bx bx-male-sign"></i>
           Male Hair Loss
         </Link>
       </li>
       <li>
         <Link to="/contact" className="link">
-          <i class="bx bx-female-sign"></i>
+          <i className="bx bx-female-sign"></i>
           Female Hair Loss
         </Link>
       </li>

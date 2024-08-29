@@ -5,9 +5,9 @@ import string_shape from "../images/string_shape.png";
 import ferrous from "../images/ferrous.png";
 import paper_clip from "../images/paper_clip.jpg";
 import hair from "../images/hair_follicle.svg";
+import hair0 from "../images/hair0.svg";
 import tooth from "../images/tooth.svg";
 import gradient_filler from "../images/gradient_filler.jpg";
-import gradient_filler0 from "../images/gradient_filler0.jpg";
 import operating_doctor from "../images/operating_doctor.jpg";
 import arrow from "../images/arrow.svg";
 import model from "../images/hair_model.jpeg";
@@ -15,10 +15,21 @@ import male_doctor from "../images/male_doctor.jpg";
 import female_doctor from "../images/female_doctor.jpg";
 import certified from "../images/certified.png";
 import certified0 from "../images/certified0.jpg";
+import certified1 from "../images/certified1.png";
+import certified2 from "../images/certified2.png";
 import certified3 from "../images/certified3.jpg";
 import smile from "../images/wide_smile.webp";
 import before_fue from "../images/before_fue_transplant_nobg.png";
 import after_fue from "../images/after_fue_transplant_nobg.png";
+import user_image from "../images/user.png";
+import user_image0 from "../images/user0.png";
+import user_image1 from "../images/user1.png";
+import user_image2 from "../images/user2.png";
+import interior from "../images/operating_room.jpg";
+import interior0 from "../images/dentistry.jpg";
+import interior1 from "../images/dentistry_and_corridor.jpg";
+import letter_n from "../images/letter_n.jpg";
+import n_circle from "../images/n_circle.png";
 
 const Home = () => {
   return (
@@ -69,19 +80,20 @@ function HeroSection() {
         <h1>Why Us</h1>
         <ul className="advantages">
           <li>
-            <i class="bx bxs-badge-check"></i>certified maxillofacial surgeon
+            <i className="bx bxs-badge-check"></i>certified maxillofacial
+            surgeon
           </li>
           <li>
-            <i class="bx bxs-badge-check"></i>90% graft survival rate
+            <i className="bx bxs-badge-check"></i>90% graft survival rate
           </li>
           <li>
-            <i class="bx bxs-badge-check"></i>Experience exceptional hair
+            <i className="bx bxs-badge-check"></i>Experience exceptional hair
             transplantation, following the highest international protocols for
             safety and precision
           </li>
           <li>
-            <i class="bx bxs-badge-check"></i>certified cole instruments (usa)
-            usage
+            <i className="bx bxs-badge-check"></i>certified cole instruments
+            (usa) usage
           </li>
         </ul>
         <button>
@@ -140,6 +152,8 @@ function PartnerLogos() {
       <span>CERTIFIED BY</span>
       <img className="partner" src={certified} alt="" />
       <img className="partner" src={certified0} alt="" />
+      <img className="partner" src={certified1} alt="" />
+      <img className="partner" src={certified2} alt="" />
       <img className="partner" src={certified3} alt="" />
     </div>
   );
@@ -161,28 +175,154 @@ function Message0() {
 }
 
 function Experiences() {
+  const data = [
+    [
+      "Venu madhav Sayani",
+      "The best hair transplant clinic in amalapuram with economical prices",
+      user_image2,
+    ],
+    [
+      "santosh kumar",
+      "The over all experience is good, the staff are polite and treatment is affordable",
+      user_image,
+    ],
+    [
+      "Yashwanth Sai",
+      "Naveen is a nice doctor! The one who understands and listens to what you're saying. I've a good experience with him. Definitely recommended!",
+      user_image0,
+    ],
+    [
+      "revathi aparna polisetty",
+      "One of the best dental clinic in amalapuram, doctor was very much experienced and politeNice Clinic very good treatment",
+      user_image1,
+    ],
+  ];
+  let review_no = 0;
+  let image_no = 0;
+  let gallery_direction = 0;
+  let reviews_direction = 0;
+
+  function reviewLeft() {
+    const reviews = document.querySelector(".reviews");
+
+    if (review_no < 3 && !reviews.classList.contains("loading")) {
+      review_no++;
+      const username = document.querySelector(".reviews .username");
+      const string = document.querySelector(".reviews .r p");
+      const img = document.querySelector(".reviews .r img");
+
+      username.innerHTML = data[review_no][0];
+      stringAnimate(data[review_no][1], string, reviews);
+      img.src = data[review_no][2];
+    }
+  }
+
+  function reviewRight() {
+    const reviews = document.querySelector(".reviews");
+
+    if (review_no > 0 && !reviews.classList.contains("loading")) {
+      review_no--;
+      const username = document.querySelector(".reviews .username");
+      const string = document.querySelector(".reviews .r p");
+      const img = document.querySelector(".reviews .r img");
+
+      img.src = data[review_no][2];
+      username.innerHTML = data[review_no][0];
+      stringAnimate(data[review_no][1], string, reviews);
+      img.src = data[review_no][2];
+    }
+  }
+
+  function stringAnimate(string, container, parent) {
+    parent.classList.add("loading");
+    for (let i = 0; i <= string.length; i++) {
+      setTimeout(() => {
+        container.innerHTML = '"' + string.substr(0, i);
+      }, i * 15);
+    }
+    setTimeout(() => {
+      parent.classList.remove("loading");
+    }, string.length * 17);
+  }
+
+  function moveInterior(dot) {
+    const dots = document.querySelectorAll(".interior .dot");
+    const container = document.querySelector(".interior .interior_wrapper");
+
+    dots.forEach((e) => e.classList.remove("active"));
+    dot.classList.add("active");
+
+    dots.forEach((e, i) => {
+      if (e.classList.contains("active")) {
+        image_no = i;
+      }
+    });
+
+    container.style.left = "-" + image_no * 100 + "%";
+  }
+
+  function automoveInterior() {
+    const container = document.querySelector(".interior_wrapper");
+    const dots = document.querySelectorAll(".interior .dot");
+
+    setTimeout(automoveInterior, 5500);
+    if (image_no < 2 && gallery_direction == 0) dots[++image_no].click();
+    else if (image_no > 0 && gallery_direction == 1) dots[--image_no].click();
+    else if (image_no == 0) gallery_direction = 0;
+    else if (image_no == 2) gallery_direction = 1;
+  }
+
+  function automoveReviews() {
+    setTimeout(automoveReviews, 7000);
+    setTimeout(() => {
+      if (review_no < 3 && reviews_direction == 0) reviewLeft();
+      else if (review_no > 0 && reviews_direction == 1) reviewRight();
+      else if (review_no == 0) reviews_direction = 0;
+      else if (review_no == 3) reviews_direction = 1;
+    }, 3500);
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const dots = document.querySelectorAll(".interior .dot");
+    moveInterior(dots[0]);
+    automoveInterior();
+    automoveReviews();
+  });
+
   return (
     <div className="experiences">
       <div className="item a">
         <img src={gradient_filler} alt="" />
+        <div className="content">
+          <h1>Why Choose Us</h1>
+          <ul className="advantages">
+            <li>
+              <i className="bx bxs-badge-check"></i>certified maxillofacial
+              surgeon
+            </li>
+            <li>
+              <i className="bx bxs-badge-check"></i>90% graft survival rate
+            </li>
+            <li>
+              <i className="bx bxs-badge-check"></i>Experience exceptional hair
+              transplantation, following the highest international protocols for
+              safety and precision
+            </li>
+            <li>
+              <i className="bx bxs-badge-check"></i>certified cole instruments
+              (usa) usage
+            </li>
+          </ul>
+        </div>
       </div>
       <div className="item b">
-        <i className="bx bxs-quote-right"></i>
-        <p>
-          "I had a great experience at this clinic. I was seen quickly, and the
-          doctor was able to diagnose and treat my condition very patiently
-        </p>
-        <div className="identity">
-          <div className="profile">
-            <img src="" alt="" />
-            <div className="content">
-              <span className="username">victor hans</span>
-              <span className="email">abs@gmail.com</span>
-            </div>
-          </div>
-          <div className="arrow">
-            <i className="bx bx-left-arrow-alt"></i>
-            <i className="bx bx-right-arrow-alt"></i>
+        <div className="reviews">
+          <div className="reviews_wrapper">
+            <UserReview
+              username="santosh kumar"
+              review="The over all experience is good, the staff are polite and treatment is affordable"
+              image_url={user_image2}
+            />
           </div>
         </div>
       </div>
@@ -194,13 +334,27 @@ function Experiences() {
         </div>
       </div>
       <div className="item d">
-        <img src={gradient_filler0} alt="" />
+        <div className="interior">
+          <div className="interior_wrapper">
+            <img src={interior} alt="" />
+            <img src={interior0} alt="" />
+            <img src={interior1} alt="" />
+          </div>
+          <div className="dots">
+            <div className="dot" onClick={(e) => moveInterior(e.target)}></div>
+            <div className="dot" onClick={(e) => moveInterior(e.target)}></div>
+            <div className="dot" onClick={(e) => moveInterior(e.target)}></div>
+          </div>
+        </div>
       </div>
       <div className="item e">
-        <img src="" alt="" />
+        <div className="logo_small">
+          <img src={letter_n} alt="" />
+          <img src={n_circle} alt="" />
+        </div>
         <div className="content">
           <span>HOSPITAL COMPLIANT</span>
-          <p>We provide the best quality care</p>
+          <p>Ensuring safe, compliant care for all</p>
           <button>
             <i className="bx bx-right-arrow-alt"></i>
             Learn More
@@ -209,6 +363,34 @@ function Experiences() {
       </div>
     </div>
   );
+
+  function UserReview({ username, review, image_url }) {
+    return (
+      <div className="r">
+        <i className="bx bxs-quote-right"></i>
+        <p>"{review}</p>
+        <div className="identity">
+          <div className="profile">
+            <img src={image_url} alt="" />
+            <div className="content">
+              <span className="username">{username}</span>
+              <div className="stars">
+                <i className="bx bxs-star"></i>
+                <i className="bx bxs-star"></i>
+                <i className="bx bxs-star"></i>
+                <i className="bx bxs-star"></i>
+                <i className="bx bxs-star"></i>
+              </div>
+            </div>
+          </div>
+          <div className="arrow">
+            <i className="bx bx-left-arrow-alt" onClick={reviewRight}></i>
+            <i className="bx bx-right-arrow-alt" onClick={reviewLeft}></i>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
 function ScrollingText() {
@@ -240,17 +422,6 @@ function OurServices() {
       </h1>
       <div className="services">
         <div className="service">
-          <i className="bx bxs-face"></i>
-          <h2>Cosmetic</h2>
-          <span>
-            Your beauty, perfected by the expertise of our world-class trained
-            surgeon
-          </span>
-          <button>
-            <i className="bx bx-right-arrow-alt"></i> Read More
-          </button>
-        </div>
-        <div className="service">
           <img src={hair} alt="" />
           <h2>Hair transplantation</h2>
           <span>
@@ -262,8 +433,19 @@ function OurServices() {
           </button>
         </div>
         <div className="service">
+          <img src={hair0} alt="" className="hair0" />
+          <h2>Non Surgical Medical Hair Loss Treatment</h2>
+          <span>
+            Restore your hair's natural fullness with our advanced non-surgical
+            treatments
+          </span>
+          <button>
+            <i className="bx bx-right-arrow-alt"></i> Read More
+          </button>
+        </div>
+        <div className="service">
           <img src={tooth} alt="" />
-          <h2>Cosmetic Surgery</h2>
+          <h2>Cosmetic Dentistry</h2>
           <span>
             Your beauty, perfected by the expertise of our world-class trained
             surgeon
@@ -278,6 +460,21 @@ function OurServices() {
 }
 
 function Tests() {
+  function moveBox() {
+    const dots = document.querySelectorAll(".treatments .dot");
+    const container = document.querySelector(".treatments_slider .wrapper");
+
+    dots.forEach((e) => {
+      e.addEventListener("click", () => {
+        console.log("hi");
+      });
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    moveBox();
+  });
+
   return (
     <div className="treatments">
       <div className="doctor">
@@ -306,23 +503,40 @@ function Tests() {
           <div className="wrapper">
             <div className="item">
               <img src={arrow} alt="" className="arrow" />
-              <span>hair treatments</span>
-              <p>
-                trichoscope analysis & examination, prp theraphy, prp therapy
-                with biotin, gfc, or 678, microneedling, lllt (laser), laser
-                hair removal, micropigmentation, microblading, hair transplant
-                (FUE), laser hair design, asesthetic facial surgeries, facial
-                bone fractoures, maxillofacial tumors
-              </p>
+              <span>hair and scalp analysis</span>
+              <p>trichoscope analysis & examination</p>
               <button>explore</button>
             </div>
             <div className="item">
-              <span>cosmetic surgeries</span>
+              <span>non surgical medical hair treatments</span>
+              <p>
+                prp theraphy, prp therapy with biotin, gfc, or 678,
+                microneedling, lllt (laser), laser hair removal,
+                micropigmentation, microblading
+              </p>
             </div>
             <div className="item">
-              <span>dentistry</span>
+              <span>Surgical hair treaatments</span>
+              <p>
+                {" "}
+                hair transplant (FUE), laser hair design, asesthetic facial
+                surgeries, facial bone fractoures, maxillofacial tumors
+              </p>
+            </div>
+            <div className="item">
+              <span>Dentistry</span>
+              <p>
+                Teeth Whitening, Smile Designing, Teeth Cleansing, Orthopedic
+                Treatment, Dental Implants
+              </p>
             </div>
           </div>
+        </div>
+        <div className="dots">
+          <div className="dot"></div>
+          <div className="dot"></div>
+          <div className="dot"></div>
+          <div className="dot"></div>
         </div>
       </div>
     </div>
