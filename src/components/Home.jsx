@@ -1,16 +1,12 @@
-// src/components/Home.js
 import React from "react";
 import "../css/home.css";
 import string_shape from "../images/string_shape.png";
-import ferrous from "../images/ferrous.png";
 import paper_clip from "../images/paper_clip.jpg";
 import hair from "../images/hair_follicle.svg";
 import hair0 from "../images/hair0.svg";
 import tooth from "../images/tooth.svg";
-import gradient_filler from "../images/gradient_filler.jpg";
 import operating_doctor from "../images/operating_doctor.jpg";
 import arrow from "../images/arrow.svg";
-import model from "../images/hair_model.jpeg";
 import male_doctor from "../images/male_doctor.jpg";
 import female_doctor from "../images/female_doctor.jpg";
 import certified from "../images/certified.png";
@@ -30,6 +26,10 @@ import interior0 from "../images/dentistry.jpg";
 import interior1 from "../images/dentistry_and_corridor.jpg";
 import letter_n from "../images/letter_n.jpg";
 import n_circle from "../images/n_circle.png";
+import step_1 from "../images/sterilization/step_1.jpg";
+import step_2 from "../images/sterilization/step_2.jpg";
+import step_3 from "../images/sterilization/step_3.jpg";
+import step_4 from "../images/sterilization/step_4.jpg";
 
 const Home = () => {
   return (
@@ -55,8 +55,7 @@ function HeroSection() {
           Your trusted center for <span>hair transplantation</span>
         </h1>
         <p>
-          At our center, we offer expert hair transplantation with a focus on
-          natural results. Trust us to help you regain confidence with
+          Expert hair transplants for natural results. Regain confidence with
           personalized care and advanced techniques
         </p>
         <button>
@@ -140,7 +139,6 @@ function HeroSection() {
             <i className="bx bx-right-arrow-alt"></i>Shop now
           </button>
         </div>
-        <img src={ferrous} alt="" />
       </div>
     </div>
   );
@@ -262,23 +260,22 @@ function Experiences() {
   }
 
   function automoveInterior() {
-    const container = document.querySelector(".interior_wrapper");
     const dots = document.querySelectorAll(".interior .dot");
 
     setTimeout(automoveInterior, 5500);
-    if (image_no < 2 && gallery_direction == 0) dots[++image_no].click();
-    else if (image_no > 0 && gallery_direction == 1) dots[--image_no].click();
-    else if (image_no == 0) gallery_direction = 0;
-    else if (image_no == 2) gallery_direction = 1;
+    if (image_no < 2 && gallery_direction === 0) dots[++image_no].click();
+    else if (image_no > 0 && gallery_direction === 1) dots[--image_no].click();
+    else if (image_no === 0) gallery_direction = 0;
+    else if (image_no === 2) gallery_direction = 1;
   }
 
   function automoveReviews() {
     setTimeout(automoveReviews, 7000);
     setTimeout(() => {
-      if (review_no < 3 && reviews_direction == 0) reviewLeft();
-      else if (review_no > 0 && reviews_direction == 1) reviewRight();
-      else if (review_no == 0) reviews_direction = 0;
-      else if (review_no == 3) reviews_direction = 1;
+      if (review_no < 3 && reviews_direction === 0) reviewLeft();
+      else if (review_no > 0 && reviews_direction === 1) reviewRight();
+      else if (review_no === 0) reviews_direction = 0;
+      else if (review_no === 3) reviews_direction = 1;
     }, 3500);
   }
 
@@ -292,7 +289,6 @@ function Experiences() {
   return (
     <div className="experiences">
       <div className="item a">
-        <img src={gradient_filler} alt="" />
         <div className="content">
           <h1>Why Choose Us</h1>
           <ul className="advantages">
@@ -460,19 +456,36 @@ function OurServices() {
 }
 
 function Tests() {
+  let treatment_no = 0;
+
   function moveBox() {
     const dots = document.querySelectorAll(".treatments .dot");
     const container = document.querySelector(".treatments_slider .wrapper");
 
-    dots.forEach((e) => {
+    dots.forEach((e, i) => {
       e.addEventListener("click", () => {
-        console.log("hi");
+        if (treatment_no !== i) {
+          dots.forEach((e) => e.classList.remove("active"));
+          e.classList.add("active");
+          container.style.left = "-" + i * 100 + "%";
+          treatment_no = i;
+        }
       });
     });
   }
 
+  function autoMoveTreatments() {
+    const dots = document.querySelectorAll(".treatments .dot");
+
+    setTimeout(autoMoveTreatments, 10500);
+    if (treatment_no === 3) treatment_no = 0;
+    if (treatment_no === 0 || dots[treatment_no].classList.contains("active"))
+      dots[++treatment_no].click();
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
     moveBox();
+    setTimeout(autoMoveTreatments, 1000);
   });
 
   return (
@@ -504,36 +517,111 @@ function Tests() {
             <div className="item">
               <img src={arrow} alt="" className="arrow" />
               <span>hair and scalp analysis</span>
-              <p>trichoscope analysis & examination</p>
+              <ul>
+                <li>
+                  <i className="bx bx-right-arrow-alt"></i>
+                  <span>trichoscope analysis & examination</span>
+                </li>
+              </ul>
               <button>explore</button>
             </div>
             <div className="item">
+              <img src={arrow} alt="" className="arrow" />
               <span>non surgical medical hair treatments</span>
-              <p>
-                prp theraphy, prp therapy with biotin, gfc, or 678,
-                microneedling, lllt (laser), laser hair removal,
-                micropigmentation, microblading
-              </p>
+              <ul>
+                <li>
+                  <i className="bx bx-right-arrow-alt"></i>
+                  <span>prp theraphy</span>
+                </li>
+                <li>
+                  <i className="bx bx-right-arrow-alt"></i>
+                  <span> prp therapy with biotin</span>
+                </li>
+                <li>
+                  <i className="bx bx-right-arrow-alt"></i>
+                  <span> gfc or 678</span>
+                </li>
+                <li>
+                  <i className="bx bx-right-arrow-alt"></i>
+                  <span> microneedling</span>
+                </li>
+                <li>
+                  <i className="bx bx-right-arrow-alt"></i>
+                  <span> lllt (laser)</span>
+                </li>
+                <li>
+                  <i className="bx bx-right-arrow-alt"></i>
+                  <span> laser hair removal</span>
+                </li>
+                <li>
+                  <i className="bx bx-right-arrow-alt"></i>
+                  <span>micropigmentation</span>
+                </li>
+                <li>
+                  <i className="bx bx-right-arrow-alt"></i>
+                  <span> microblading</span>
+                </li>
+              </ul>
+              <button>explore</button>
             </div>
             <div className="item">
-              <span>Surgical hair treaatments</span>
-              <p>
-                {" "}
-                hair transplant (FUE), laser hair design, asesthetic facial
-                surgeries, facial bone fractoures, maxillofacial tumors
-              </p>
+              <img src={arrow} alt="" className="arrow" />
+              <span>Surgical hair treatments</span>
+              <ul>
+                <li>
+                  <i className="bx bx-right-arrow-alt"></i>
+                  <span>hair transplant (FUE)</span>
+                </li>
+                <li>
+                  <i className="bx bx-right-arrow-alt"></i>
+                  <span> laser hair design</span>
+                </li>
+                <li>
+                  <i className="bx bx-right-arrow-alt"></i>
+                  <span>asesthetic facial surgeries</span>
+                </li>
+                <li>
+                  <i className="bx bx-right-arrow-alt"></i>
+                  <span>facial bone fractoures</span>
+                </li>
+                <li>
+                  <i className="bx bx-right-arrow-alt"></i>
+                  <span>maxillofacial tumors</span>
+                </li>
+              </ul>
+              <button>explore</button>
             </div>
             <div className="item">
+              <img src={arrow} alt="" className="arrow" />
               <span>Dentistry</span>
-              <p>
-                Teeth Whitening, Smile Designing, Teeth Cleansing, Orthopedic
-                Treatment, Dental Implants
-              </p>
+              <ul>
+                <li>
+                  <i className="bx bx-right-arrow-alt"></i>
+                  <span>Teeth Whitening</span>
+                </li>
+                <li>
+                  <i className="bx bx-right-arrow-alt"></i>
+                  <span> Smile Designing</span>
+                </li>
+                <li>
+                  <i className="bx bx-right-arrow-alt"></i>
+                  <span> Teeth Cleansing</span>
+                </li>
+                <li>
+                  <i className="bx bx-right-arrow-alt"></i>
+                  <span> Orthopedic Treatment </span>
+                </li>
+                <li>
+                  <i className="bx bx-right-arrow-alt"></i>
+                  <span>Dental Implants</span>
+                </li>
+              </ul>
+              <button>explore</button>
             </div>
           </div>
         </div>
         <div className="dots">
-          <div className="dot"></div>
+          <div className="dot active"></div>
           <div className="dot"></div>
           <div className="dot"></div>
           <div className="dot"></div>
@@ -547,22 +635,63 @@ function Events() {
   return (
     <div className="events">
       <div className="banner">
-        <div className="content">
-          <span className="sub_heading">JOIN EVENT</span>
-          <h2>
-            Take <b>better care for your hair</b>
-          </h2>
-          <p>Experience dedicated care that brings out the best in your hair</p>
-          <button>
-            <i className="bx bx-right-arrow-alt"></i>
-            Join Event
-          </button>
+        <h2>Our Comprehensive Sterilization Process</h2>
+        <p>
+          At Naveen Superspeciality Dental, Hair, and Face Hospital, we are
+          committed to upholding the highest standards of healthcare excellence,
+          ensuring full compliance with all industry regulations and best
+          practices to provide safe and effective treatments to our patients.
+        </p>
+        <p>
+          To demonstrate our unwavering commitment to asepsis, we open sealed
+          and pouched sterile instruments in front of each patient. At Clove
+          Dental, we take patient safety very seriously and will continue to
+          strictly adhere to our sterilization protocols to provide the highest
+          level of care possible.
+        </p>
+        <hr />
+        <div className="steps">
+          <div className="step">
+            <img src={step_1} alt="" />
+            <div className="content">
+              <h2>Step - 1</h2>
+              <p>
+                Dipping in disinfectant solution for a minimum 30 minutes.
+                Scrubbing &amp; cleaning in running water and cleansing solution
+              </p>
+            </div>
+          </div>
+          <div className="step">
+            <img src={step_2} alt="" />
+            <div className="content">
+              <h2>Step - 2</h2>
+              <p>
+                Cleansed in an Ultrasonic cleaner chamber. Dried and packaged in
+                separate Sealed pouches.
+              </p>
+            </div>
+          </div>
+          <div className="step">
+            <img src={step_3} alt="" />
+            <div className="content">
+              <h2>Step - 3</h2>
+              <p>
+                Sterilized in ‘B-class’ Autoclave to ensure 100% sterilization
+                following the sterilisation cycle.
+              </p>
+            </div>
+          </div>
+          <div className="step">
+            <img src={step_4} alt="" />
+            <div className="content">
+              <h2>Step - 4</h2>
+              <p>
+                Stored in UV Light storage cabinets, in the sterilisation room
+                to maintain sterility of instruments till they are used.
+              </p>
+            </div>
+          </div>
         </div>
-        <img src={model} alt="" />
-        <i className="bx bx-plus"></i>
-        <i className="bx bx-plus"></i>
-        <div className="circle"></div>
-        <div className="square"></div>
       </div>
     </div>
   );
@@ -577,8 +706,9 @@ function Doctors() {
         <div className="list">
           <div className="doctor">
             <img src={male_doctor} alt="" />
-            <span className="name">Doctor Name</span>
-            <span className="designation">Doctor Designation</span>
+            <span className="name">Dr.Naveen Sayani</span>
+            <span className="designation">Hair Transplant Surgeon</span>
+            <span className="designation">Facial Trauma Surgeon</span>
             <button>
               <i className="bx bx-right-arrow-alt"></i>
               Book An Appointment
@@ -586,8 +716,8 @@ function Doctors() {
           </div>
           <div className="doctor">
             <img src={female_doctor} alt="" />
-            <span className="name">Doctor Name</span>
-            <span className="designation">Doctor Designation</span>
+            <span className="name">Dr.Gandham Sruthi</span>
+            <span className="designation">Dentist</span>
             <button>
               <i className="bx bx-right-arrow-alt"></i>
               Book An Appointment

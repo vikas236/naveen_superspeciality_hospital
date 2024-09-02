@@ -1,0 +1,794 @@
+.about {
+  width: 100vw;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.about .banner {
+  width: calc(100vw - 200px);
+  margin-bottom: 150px;
+  position: relative;
+}
+
+.about .banner .banner_img {
+  width: 100%;
+  height: 325px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.about .banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+}
+
+.about .banner .content {
+  width: calc(100% - 100px);
+  background: #e9eef2;
+  border-radius: 20px;
+  position: absolute;
+  bottom: -125px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 65px 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about .banner h1 {
+  margin: 0;
+  margin-bottom: 7px;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.about .banner span {
+  font-size: 14px;
+}
+
+.about .banner span b {
+  margin-right: 15px;
+  color: #417ed7;
+}
+
+.about .banner .right {
+  width: fit-content;
+  display: flex;
+  gap: 25px;
+}
+
+.about .banner .right .call {
+  background: white;
+  padding: 7px 7px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #51aaa2;
+  font-size: 18px;
+}
+
+.about .banner .right .call i {
+  font-size: 24px;
+  background: #51aaa2;
+  color: white;
+  border-radius: 50%;
+  padding: 17px;
+  border: none;
+  margin-right: 13px;
+}
+
+.about .banner .right .call span {
+  font-size: 16px;
+  font-weight: 800;
+  margin-left: 5px;
+  padding-right: 15px;
+}
+
+/* about hospital */
+
+.about_hospital {
+  width: 1250px;
+  height: 585px;
+  margin-bottom: 100px;
+  margin-top: 70px;
+  display: flex;
+  gap: 50px;
+}
+
+.about_hospital .left {
+  width: 50%;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+}
+
+.about_hospital img {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.about .numbers {
+  content: "";
+  width: 185px;
+  height: 200px;
+  background: white;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  border-radius: 20px;
+  padding: 23px;
+  padding-top: 0;
+  padding-right: 0;
+}
+
+.about .numbers.b {
+  width: 170px;
+  height: 163px;
+  bottom: 0;
+  top: auto;
+  left: 0;
+  padding: 23px;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+
+.about .numbers.b .wrapper {
+  background: #ccd9d6;
+}
+
+.about .numbers .corner {
+  width: 200px;
+  height: 200px;
+  background: transparent;
+  position: absolute;
+  z-index: 2;
+  border-radius: 20px;
+}
+
+.about .numbers .corner.a {
+  left: -166px;
+  top: -51px;
+}
+
+.about .numbers .corner.b {
+  right: -35px;
+  top: 149px;
+}
+
+.about .numbers .corner.c {
+  left: -35px;
+  bottom: 112px;
+  transform: rotate(180deg);
+}
+
+.about .numbers .corner.d {
+  left: 149px;
+  bottom: -40px;
+  transform: rotate(180deg) scale(1.2);
+}
+
+.about .numbers .wrapper {
+  width: 100%;
+  height: 100%;
+  background: #d6cdd6;
+  border-radius: 20px;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 14px;
+  position: relative;
+}
+
+.about .numbers .wrapper .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid white;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 22px;
+}
+
+.about .numbers span {
+}
+
+.about .numbers b {
+  font-size: 36px;
+  color: black;
+  font-weight: 900;
+  margin-bottom: 7px;
+}
+
+.about_hospital .right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about_hospital .right .sub_heading {
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #417ed7;
+}
+
+.about_hospital .right h1 {
+  font-size: 44px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.about_hospital .right h1 b {
+  font-weight: 800;
+}
+
+.about_hospital .right p {
+  font-weight: 18px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.67);
+}
+
+.about_hospital .right ul {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 25px;
+  padding: 0;
+}
+
+.about_hospital .right i {
+  margin-right: 7px;
+  font-size: 22px;
+  color: #51aaa2;
+}
+
+/* hospital features */
+
+.features {
+  width: 1250px;
+  display: flex;
+  padding-bottom: 150px;
+  gap: 25px;
+}
+
+.features .feature {
+  background: #9bbbea;
+  border-radius: 40px;
+  padding: 50px 45px;
+  width: 33.3333%;
+  height: 250px;
+}
+
+.features .feature:nth-child(2) {
+  background: #ccd9d6;
+}
+
+.features .feature:nth-child(3) {
+  background: #94aac9;
+}
+
+.features .feature i {
+  font-size: 32px;
+}
+
+.features .feature h2 {
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-top: 25px;
+}
+
+.features .feature p {
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.57);
+  margin-top: 10px;
+}
+
+/* more about hospital */
+
+.more_about {
+  width: 1250px;
+  display: flex;
+  gap: 100px;
+}
+
+.more_about .left {
+  width: 40%;
+  position: relative;
+}
+
+.more_about .left img {
+  width: 100%;
+  border-radius: 20px;
+  overflow: cover;
+}
+
+.more_about .right {
+  width: 60%;
+  padding-top: 35px;
+}
+
+.more_about .right .sub_heading {
+  font-size: 12px;
+  font-weight: 800;
+  color: #417ed7;
+  letter-spacing: 1px;
+}
+
+.more_about .right h1 {
+  font-size: 44px;
+  font-weight: 500;
+  margin-top: 7px;
+}
+
+.more_about .right p {
+  font-size: 16px;
+  line-height: 25px;
+  padding-left: 25px;
+  position: relative;
+  color: rgba(0, 0, 0, 0.57);
+}
+
+.more_about .right > p:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background: #d6cdd6;
+  left: 0;
+}
+
+.more_about .right .image {
+  display: flex;
+  padding-left: 100px;
+  padding-top: 30px;
+  position: relative;
+}
+
+.more_about .right img {
+  width: 375px;
+  height: 275px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.more_about .right img:nth-child(1) {
+  position: absolute;
+  left: -285px;
+  bottom: 0px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.more_about .right .image .content {
+  height: 50px;
+}
+
+@media only screen and (max-width: 1350px) {
+  .about .banner {
+    width: calc(100vw - 50px);
+    height: fit-content;
+    margin-bottom: 0;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 0;
+  }
+
+  .about .banner .banner_img {
+    width: 100%;
+    height: 175px;
+  }
+
+  .about .banner img {
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  .about .banner .content {
+    width: 100%;
+    position: relative;
+    bottom: -15px;
+    padding: 35px;
+    padding-left: 40px;
+    padding-top: 20px;
+  }
+
+  .about .banner .right {
+    flex-direction: column;
+    gap: 13px;
+  }
+
+  .about .banner .right .call {
+    padding: 6px;
+  }
+
+  .about .banner .right .call i {
+    font-size: 24px;
+    padding: 9px;
+  }
+
+  .about .banner .right .call {
+    font-size: 15px;
+  }
+
+  .about .banner .right .call span {
+    font-size: 15px;
+  }
+
+  .about_hospital {
+    width: calc(100% - 50px);
+    margin-bottom: 85px;
+    margin-top: 75px;
+    gap: 50px;
+  }
+
+  .about_hospital .right h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .about_hospital .right p {
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  .about_hospital .right ul {
+    padding: 0;
+    gap: 3px;
+  }
+
+  .about_hospital .right li {
+    font-size: 14px;
+  }
+
+  .features {
+    width: calc(100% - 50px);
+    padding-bottom: 150px;
+    gap: 25px;
+  }
+
+  .features .feature {
+    height: fit-content;
+  }
+
+  .more_about {
+    width: calc(100% - 50px);
+    gap: 45px;
+  }
+
+  .more_about .left {
+    width: 40%;
+  }
+
+  .more_about .right {
+    width: 60%;
+    padding-top: 5%;
+  }
+
+  .more_about .right h1 {
+    font-size: 38px;
+  }
+
+  .more_about .right p {
+    line-height: 23px;
+    font-size: 15px;
+  }
+
+  .more_about .right p:nth-child(1) {
+    height: 200px;
+    overflow: scroll;
+  }
+
+  .more_about .right .image {
+    padding-left: 0px;
+    margin-left: -28px;
+  }
+
+  .more_about .right img {
+    width: 325px;
+    height: 225px;
+  }
+
+  .more_about .right img:nth-child(1) {
+    left: -350px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .about .banner {
+    width: 970px;
+  }
+
+  .about_hospital {
+    width: 970px;
+    height: fit-content;
+    flex-direction: column;
+  }
+
+  .about_hospital .left {
+    width: 100%;
+    height: 1000px;
+    background: pink;
+  }
+
+  .about_hospital .right {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .about .numbers {
+    padding: 85px;
+    padding-top: 0;
+    padding-right: 0;
+    box-sizing: content-box;
+  }
+
+  .about .numbers.b {
+    padding: 85px;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+
+  .about .numbers .corner.b {
+    right: -35px;
+    bottom: calc(-53% + 2px);
+    top: auto;
+  }
+
+  .about .numbers .corner.c {
+    bottom: calc(80% - 1px);
+  }
+
+  .about .numbers .corner.d {
+    left: calc(92% - 1px);
+  }
+
+  .features {
+    width: 970px;
+  }
+
+  .features .feature {
+    padding: 30px 35px;
+  }
+
+  .more_about {
+    width: 970px;
+  }
+
+  .more_about .right {
+    padding: 0;
+  }
+
+  .more_about .right img {
+    width: 275px;
+    height: 175px;
+  }
+
+  .more_about .right img:nth-child(1) {
+    left: -285px;
+    bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .about .banner {
+    width: 693px;
+  }
+
+  .about_hospital {
+    width: 693px;
+  }
+
+  .about_hospital .left {
+    height: 650px;
+  }
+
+  .about .numbers {
+    padding: 50px;
+    padding-top: 0;
+    padding-right: 0;
+    box-sizing: content-box;
+  }
+
+  .about .numbers.b {
+    padding: 50px;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+
+  .about .numbers .corner.b {
+    right: -35px;
+    bottom: calc(-61% + 3px);
+    top: auto;
+  }
+
+  .about .numbers .corner.c {
+    bottom: calc(77% - 2px);
+  }
+
+  .about .numbers .corner.d {
+    left: calc(91% - 1px);
+  }
+
+  .features {
+    width: 670px;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 25px;
+  }
+
+  .features .feature {
+    width: calc(50% - 13px);
+    padding: 40px 50px;
+  }
+
+  .more_about {
+    width: 670px;
+    height: fit-content;
+    flex-direction: column;
+  }
+
+  .more_about .left {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .more_about .right {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .more_about .image {
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow: hidden;
+    margin-left: 0 !important;
+  }
+
+  .more_about .image img {
+    width: calc(50% - 10px);
+    height: fit-content;
+    position: static !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .more_about .image p {
+    overflow: visible;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 753px) {
+  .about .banner {
+    width: 532px;
+  }
+
+  .about .banner .content {
+    flex-direction: column;
+    align-items: start;
+    gap: 25px;
+    padding: 45px 40px;
+  }
+
+  .about .banner .content .call {
+    margin-left: 0;
+  }
+
+  .about_hospital {
+    width: 532px;
+  }
+
+  .about_hospital .left {
+    height: 450px;
+  }
+
+  .about .numbers {
+    width: 135px;
+    height: 150px;
+    padding: 23px;
+    padding-top: 0;
+    padding-right: 0;
+    box-sizing: content-box;
+  }
+
+  .about .numbers.b {
+    width: 130px;
+    height: 123px;
+    padding: 23px;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+
+  .about .numbers .corner.b {
+    right: -35px;
+    bottom: calc(-88% + 3px);
+    top: auto;
+  }
+
+  .about .numbers .corner.c {
+    bottom: calc(67% - 3px);
+  }
+
+  .about .numbers .corner.d {
+    left: calc(87% - 1px);
+  }
+
+  .about_hospital {
+    margin-bottom: 75px;
+  }
+
+  .about_hospital .right ul {
+    margin-top: 10px;
+  }
+
+  .features {
+    width: 532px;
+  }
+
+  .features .feature {
+    padding: 30px 25px;
+    padding-bottom: 5px;
+  }
+
+  .more_about {
+    width: 532px;
+  }
+
+  .more_about .right .image img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 556px) {
+  .about .banner {
+    width: calc(100vw - 24px);
+  }
+
+  .about .banner .content {
+    gap: 30px;
+    padding: 50px 25px;
+  }
+
+  .about_hospital {
+    width: calc(100vw - 24px);
+    margin-bottom: 35px;
+  }
+
+  .about_hospital .left {
+    height: 400px;
+  }
+
+  .features {
+    width: calc(100vw - 24px);
+    height: fit-content;
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+
+  .features .feature {
+    width: 100%;
+  }
+
+  .more_about {
+    width: calc(100vw - 24px);
+    overflow: visible;
+  }
+}
