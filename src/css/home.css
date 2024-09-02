@@ -1210,6 +1210,7 @@
 
 .events .step {
   width: 49%;
+  height: 200px;
   display: flex;
   justify-content: space-between;
   gap: 50px;
@@ -2120,6 +2121,19 @@
     padding-top: 10px;
   }
 
+  .events .banner .step {
+    gap: 15px;
+  }
+
+  .events .banner .step .left,
+  .events .banner .step .right {
+    width: 50%;
+  }
+
+  .events .banner .step p {
+    font-size: 14px;
+  }
+
   .doctors .sub_heading {
     font-size: 12px;
   }
@@ -2265,9 +2279,18 @@
 
   .events .banner .steps .step {
     gap: 25px;
+    height: fit-content;
+    flex-direction: column;
   }
 
   .doctors {
     width: calc(100vw - 30px);
   }
+}
+
+#root > h1,
+#root > h2 {
+  height: 100dvh !important;
+  text-align: center;
+  padding-top: 35vh;
 }

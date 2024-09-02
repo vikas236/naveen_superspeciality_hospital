@@ -1,4 +1,153 @@
 .footer {
-  height: 575px;
-  background: pink;
+  width: calc(100vw - 100px);
+  height: 565px;
+  background: #020d2b;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer .wrapper {
+  width: calc(1300px);
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  padding: 125px 0;
+}
+
+.footer .column {
+  width: 20%;
+  color: white;
+}
+
+.footer .column:first-of-type {
+  width: 425px;
+}
+
+.footer .logo {
+  width: 100%;
+  color: white;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.footer .logo img {
+  width: 100%;
+}
+
+.footer .logo .sub_heading {
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  font-size: 14px;
+  padding-left: 10px;
+  display: inline-block;
+}
+
+.footer .column > span {
+  color: rgba(255, 255, 255, 0.54);
+  line-height: 27px;
+  display: inline-block;
+  font-size: 17px;
+}
+
+.footer .column > span b {
+  color: white;
+  font-weight: 500;
+}
+
+.footer .column > span.visiting_hours {
+  margin-top: 20px;
+}
+
+.footer .column h1 {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.footer .column a {
+  color: rgba(255, 255, 255, 0.54);
+  text-decoration: none;
+  display: block;
+  margin: 20px 0;
+}
+
+.footer .disclaimer {
+  width: 100%;
+  position: absolute;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 16px;
+  font-weight: 500;
+  background: #8ec0ee;
+  padding: 25px 0;
+  bottom: -11px;
+  text-align: center;
+}
+
+.footer .disclaimer b {
+  font-weight: 500;
+  color: #020d2b;
+}
+
+.footer .disclaimer a {
+  text-decoration: none;
+  color: #020d2b;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1600px) {
+  .footer {
+    width: calc(100vw - 60px);
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .footer {
+    width: 100vw !important;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .footer .wrapper {
+    width: 1080px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer {
+    height: fit-content;
+    padding: 35px 0;
+  }
+
+  .footer .wrapper {
+    width: 100%;
+    height: fit-content;
+    flex-wrap: wrap;
+    padding: 75px;
+    row-gap: 15px;
+  }
+
+  .footer .column {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 973px) {
+  .footer {
+    border-radius: 0;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .footer .column:first-of-type {
+    width: 100%;
+  }
+
+  .footer .column .logo {
+    width: 300px;
+  }
 }
