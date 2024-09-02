@@ -119,125 +119,17 @@
   width: 100%;
   height: fit-content;
   color: white;
-  font-size: 5rem;
-  font-weight: 900;
+  font-size: 24px;
   margin: 0;
-  text-align: start;
+  margin-bottom: 15px;
+  /* text-align: center; */
 }
 
-.hero .box.b ul {
-  list-style: none;
-  color: white;
-  padding: 0;
-  padding-left: 5px;
-  margin-top: 20px;
-}
-
-.hero .box.b ul li {
-  padding: 0;
-  padding-right: 35px;
-  display: flex;
-  align-items: start;
-  margin-bottom: 7px;
-  line-height: 23px;
-}
-
-.hero .box.b ul i {
-  margin-right: 5px;
-  padding-top: 3px;
-}
-
-.hero .box.b .box_award {
-  display: none;
-  width: 140px;
-  height: 135px;
-  background: linear-gradient(135deg, #fff, #d6cdd6, #ffd1dc);
-  border: 1px solid white;
-  background-repeat: no-repeat;
-  position: absolute;
-  border-radius: 20px;
-  inset: 30px;
-  padding: 8px;
-}
-
-.hero .box.b .box_award .content {
+.hero .box.b img {
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  border-radius: 20px;
-  border: 1px solid white;
-  overflow: hidden;
-}
-
-.hero .box.b .box_award .stars {
-  width: 100%;
-  border: 1px solid white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px 0;
-}
-
-.hero .box.b .box_award i {
-  margin: 0 1px;
-}
-
-.hero .box.b .box_award span {
-  width: 100%;
-  text-align: center;
-  font-weight: 500;
-  font-size: 13px;
-  padding: 0 15px;
-  box-sizing: border-box;
-}
-
-.hero .box.b .box_award span.year {
-  width: 100%;
-  background: white;
-  letter-spacing: 7px;
-  font-size: 12px;
-  font-weight: 700;
-  padding: 7px 0;
-  border-radius: 25px;
-}
-
-.hero .box.b button {
-  position: absolute;
-  bottom: 30px;
-  right: 25px;
-  background: #020d2b;
-  border: none;
-  padding: 11px 25px;
-  border-radius: 25px;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  transition: 0.5s;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.hero .box.b button i {
-  color: #020d2b;
-  background: white;
-  padding: 2px;
-  border-radius: 50%;
-  margin-right: 12px;
-  font-size: 18px;
-  transition: 0.5s;
-}
-
-.hero .box.b button:hover {
-  background: #2865be;
-}
-
-.hero .box.b button:hover i {
-  color: #2865be;
+  object-fit: contain;
+  margin-bottom: -50px;
 }
 
 .hero .box.c {
@@ -380,78 +272,18 @@
 }
 
 .hero .box.f {
-  padding: 30px;
+  padding: 20px;
   overflow: hidden;
+  display: flex;
+  gap: 20px;
 }
 
 .hero .box.f img {
-  width: 47%;
-  margin-left: calc(275px);
-}
-
-.hero .box.f .content {
-  width: 265px;
-  height: calc(100% - 60px);
-  background: rgba(255, 255, 255, 0.8);
-  position: absolute;
-  left: 30px;
-  top: 27px;
-  border-radius: 20px;
-  padding: 30px;
-}
-
-.hero .box.f p {
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 20px;
-}
-
-.hero .box.f span {
-  color: rgba(0, 0, 0, 0.7);
-  line-height: 25px;
-  font-size: 16px;
-  font-weight: 400;
-  display: block;
-  margin-bottom: 30px;
-}
-
-.hero .box.f hr {
-  color: white;
-  border: none;
-  border-bottom: 1px solid white;
-}
-
-.hero .box.f button {
-  color: white;
-  background: #998099;
-  font-size: 16px;
-  border: none;
-  outline: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 25px;
-  border-radius: 25px;
-  margin-top: 35px;
-  transition: 0.5s;
-  cursor: pointer;
-}
-
-.hero .box.f button i {
-  color: #998099;
+  width: 50%;
+  height: 100%;
+  object-fit: contain;
   background: white;
-  border-radius: 50%;
-  margin-right: 11px;
-  font-size: 20px;
-  transition: 0.5s;
-}
-
-.hero .box.f button:hover {
-  background: #2865be;
-}
-
-.hero .box.f button:hover i {
-  color: #2865be;
+  border-radius: 20px;
 }
 
 /* parter logos */
@@ -567,6 +399,7 @@
 
 .home .experiences .item.a {
   height: 350px;
+  background-image: linear-gradient(to bottom right, #283a2d, #e1e7e5);
 }
 
 .home .experiences .item.a .content {
@@ -1120,14 +953,20 @@
   margin: 0;
 }
 
+.treatments .doctor .doctor_award span {
+  margin-top: 3px;
+  margin-bottom: 2px;
+  display: inline-block;
+  font-weight: 700;
+}
+
 .treatments .doctor .doctor_award p {
   padding: 0;
   margin: 0;
   font-weight: 300;
   font-size: 14px;
   width: 85%;
-  margin-top: 9px;
-  line-height: 25px;
+  margin: 0;
 }
 
 .treatments .doctor .doctor_award i:last-of-type {
@@ -1366,6 +1205,7 @@
   padding-top: 30px;
   padding-bottom: 30px;
   justify-content: space-between;
+  color: white;
 }
 
 .events .step {
@@ -1744,7 +1584,7 @@
   }
 
   .hero .box.a {
-    grid-row: 1 / 7;
+    grid-row: 1 / 10;
     margin: 0;
     padding: 25px;
   }
@@ -1761,12 +1601,12 @@
   }
 
   .hero .box.b {
-    grid-row: 1 / 7;
+    grid-row: 1 / 10;
     padding: 25px 35px;
   }
 
   .hero .box.b h1 {
-    font-size: 28px;
+    font-size: 16px;
   }
 
   .hero .box.b ul {
@@ -1789,7 +1629,7 @@
   }
 
   .hero .box.c {
-    grid-row: 1 / 7;
+    grid-row: 1 / 10;
     padding: 15px;
     gap: 0;
   }
@@ -1808,13 +1648,13 @@
   }
 
   .hero .box.d {
+    grid-row: 10 / 24;
     grid-column: 1 / 5;
-    grid-row: 7 / 21;
   }
 
   .hero .box.e {
     grid-column: 5 / 15;
-    grid-row: 7 / 21;
+    grid-row: 10 / 24;
     padding: 75px;
   }
 
@@ -1843,7 +1683,8 @@
 
   .hero .box.f {
     grid-column: 1 / 15;
-    grid-row: 21 / 39;
+    grid-row: 24 / 30;
+    height: 525px;
   }
 
   .hero .box.f .content {
@@ -1949,9 +1790,8 @@
 
   .hero .box.a {
     grid-column: 1 / 15;
-    grid-row: 1 / 7;
+    grid-row: 1 / 12;
     padding: 25px 40px;
-    height: fit-content;
   }
 
   .hero .box.a h1 {
@@ -1968,45 +1808,39 @@
 
   .hero .box.b {
     grid-column: 1 / 15;
-    grid-row: 7 / 18;
+    grid-row: 12 / 21;
   }
 
   .hero .box.c {
-    grid-column: 1 / 7;
-    grid-row: 18 / 27;
+    grid-column: 1 / 11;
+    grid-row: 21 / 27;
+    flex-direction: row;
+  }
+
+  .hero .box.c img {
+    width: 50%;
+    height: fit-content;
   }
 
   .hero .box.d {
     grid-column: 1 / 6;
-    grid-row: 27 / 28;
+    grid-row: 27 / 36;
   }
 
   .hero .box.e {
     grid-column: 6 / 15;
-    grid-row: 27 / 28;
-    padding: 15px;
+    grid-row: 27 / 36;
+    padding: 35px 0;
   }
 
   .hero .box.f {
     grid-column: 1 / 15;
-    grid-row: 28 / 41;
+    grid-row: 36 / 41;
+    height: 350px;
   }
 
   .hero .box.c img.string_shape {
     display: none;
-  }
-
-  .hero .box.b h1 {
-    font-size: 650%;
-    margin-top: 55px;
-  }
-
-  .hero .box.b .box_award {
-    inset: 10px;
-  }
-
-  .hero .box.c img {
-    width: 85%;
   }
 
   .hero .box.e img {
@@ -2016,10 +1850,14 @@
   }
 
   .hero .box.e p {
-    font-size: 16px;
+    font-size: 14px;
     padding: 0 15px;
     padding: 0 10px;
     margin-top: 0;
+  }
+
+  .hero .box.e span {
+    font-size: 14px;
   }
 
   .partner_logos {
@@ -2084,24 +1922,24 @@
   }
 
   .events {
-    height: 353px;
     margin-bottom: 175px;
   }
 
   .events .banner {
     width: 693px;
     height: fit-content;
-    padding: 50px 50px;
+    padding: 0 50px;
     flex-direction: column;
     align-items: start;
   }
 
-  .events img {
-    display: none;
-  }
-
   .events .banner h2 {
     width: 75%;
+  }
+
+  .events .banner .steps {
+    gap: 20px;
+    padding-bottom: 40px;
   }
 }
 
@@ -2116,6 +1954,8 @@
 
   .hero .box.a {
     padding: 15px;
+    height: fit-content;
+    padding: 35px;
   }
 
   .hero .box.b {
@@ -2123,21 +1963,17 @@
     padding: 15px;
   }
 
-  .hero .box.b h1 {
-    font-size: 11vw;
-  }
-
   .hero .box.c {
-    width: 85%;
-    height: 425px;
+    width: 90%;
+    height: fit-content;
   }
 
-  .hero .box.c img {
-    width: 80%;
+  .hero .box.d {
+    height: 500px;
   }
 
   .hero .box.e {
-    height: 350px;
+    height: fit-content;
   }
 
   .hero .box.e .content {
@@ -2145,17 +1981,13 @@
   }
 
   .hero .box.f {
-    height: 250px;
-  }
-
-  .hero .box.f .content {
-    display: none;
+    height: 300px;
+    padding: 15px;
+    gap: 15px;
   }
 
   .hero .box.f img {
     width: 100%;
-    margin-left: 17%;
-    margin-right: 17%;
   }
 
   .partner_logos {
@@ -2193,7 +2025,8 @@
   }
 
   .home .experiences .item.a {
-    height: 300px;
+    height: 315px;
+    padding-top: 0;
   }
 
   .home .experiences .item.b {
@@ -2210,10 +2043,6 @@
     align-items: start;
     padding: 20px 35px;
     padding-top: 43px;
-  }
-
-  .home .experiences .item.e img {
-    margin-left: 15px;
   }
 
   .home .scrolling_text {
@@ -2260,14 +2089,12 @@
     font-size: 28px;
   }
 
-  .treatments .treatments_slider .item {
-    padding: 15px;
-    margin-top: 25px;
+  .treatments .treatments_slider {
+    margin-top: 35px;
   }
 
-  .events {
-    height: 300px;
-    margin-bottom: 175px;
+  .treatments .treatments_slider .item {
+    padding: 30px 15px;
   }
 
   .events .banner {
@@ -2281,6 +2108,16 @@
 
   .events .banner h2 {
     font-size: 28px;
+    padding-top: 0px;
+    margin-top: 10px;
+  }
+
+  .events .banner hr {
+    margin-top: 30px;
+  }
+
+  .events .banner .steps {
+    padding-top: 10px;
   }
 
   .doctors .sub_heading {
@@ -2313,13 +2150,14 @@
   }
 
   .hero .box.b {
-    height: 325px;
+    height: 350px;
     padding: 15px;
+    padding-bottom: 50px;
   }
 
   .hero .box.b h1 {
-    font-size: 15vw;
-    margin-top: 40px;
+    margin-top: 15px;
+    margin-left: 35px;
   }
 
   .hero .box.c {
@@ -2332,7 +2170,8 @@
   }
 
   .hero .box.e {
-    height: 350px;
+    height: fit-content;
+    padding: 35px 0;
   }
 
   .hero .box.e .content {
@@ -2341,6 +2180,8 @@
 
   .hero .box.f {
     height: 250px;
+    gap: 10px;
+    padding: 10px;
   }
 
   .hero .box.f .content {
@@ -2349,8 +2190,6 @@
 
   .hero .box.f img {
     width: 100%;
-    margin-left: 17%;
-    margin-right: 17%;
   }
 
   .partner_logos {
@@ -2372,7 +2211,12 @@
   }
 
   .home .experiences .item.a {
-    height: 240px;
+    height: 325px;
+    padding-top: 0;
+  }
+
+  .home .experiences .item.a h1 {
+    padding-top: 0;
   }
 
   .home .experiences .item.b {
@@ -2419,11 +2263,11 @@
     padding: 20px;
   }
 
+  .events .banner .steps .step {
+    gap: 25px;
+  }
+
   .doctors {
     width: calc(100vw - 30px);
   }
-}
-
-.background {
-  color: #51aaa2;
 }

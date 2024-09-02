@@ -30,6 +30,9 @@ import step_1 from "../images/sterilization/step_1.jpg";
 import step_2 from "../images/sterilization/step_2.jpg";
 import step_3 from "../images/sterilization/step_3.jpg";
 import step_4 from "../images/sterilization/step_4.jpg";
+import hair_loss from "../images/home/hair_loss.png";
+import female_hair from "../images/home/types0.png";
+import male_hair from "../images/home/types1.png";
 
 const Home = () => {
   return (
@@ -63,41 +66,8 @@ function HeroSection() {
         </button>
       </div>
       <div className="box b">
-        <div className="box_award">
-          <div className="content">
-            <div className="stars">
-              <i className="bx bxs-star"></i>
-              <i className="bx bxs-star"></i>
-              <i className="bx bxs-star"></i>
-              <i className="bx bxs-star"></i>
-              <i className="bx bxs-star"></i>
-            </div>
-            <span>BEST AWARD</span>
-            <span className="year">2024</span>
-          </div>
-        </div>
-        <h1>Why Us</h1>
-        <ul className="advantages">
-          <li>
-            <i className="bx bxs-badge-check"></i>certified maxillofacial
-            surgeon
-          </li>
-          <li>
-            <i className="bx bxs-badge-check"></i>90% graft survival rate
-          </li>
-          <li>
-            <i className="bx bxs-badge-check"></i>Experience exceptional hair
-            transplantation, following the highest international protocols for
-            safety and precision
-          </li>
-          <li>
-            <i className="bx bxs-badge-check"></i>certified cole instruments
-            (usa) usage
-          </li>
-        </ul>
-        <button>
-          <i className="bx bx-right-arrow-alt"></i>Book a consultation
-        </button>
+        <h1>Are you suffering from hair loss</h1>
+        <img src={hair_loss} alt="" />
       </div>
       <div className="box c">
         <h1>Fue Hair Transplant</h1>
@@ -129,16 +99,8 @@ function HeroSection() {
         </div>
       </div>
       <div className="box f">
-        <div className="content">
-          <p>WE PROVIDE PRODUCTS FOR YOUR NEEDS AT YOUR DOORSTEP</p>
-          <span>
-            Shop your medicine online from <b>Us</b>
-          </span>
-          <hr />
-          <button>
-            <i className="bx bx-right-arrow-alt"></i>Shop now
-          </button>
-        </div>
+        <img src={female_hair} alt="" />
+        <img src={male_hair} alt="" />
       </div>
     </div>
   );
@@ -495,10 +457,9 @@ function Tests() {
         <div className="doctor_award">
           <i className="bx bxs-award"></i>
           <div className="content">
-            <h3>AWARD NAME</h3>
-            <p>
-              Award for a certain reason, consistency, precision, in profession
-            </p>
+            <h3>Dr Naveen Sayani</h3>
+            <span>certified</span>
+            <p>Hair Transplant Surgeon, Facial Trauma Surgeon</p>
           </div>
           <i className="bx bx-right-arrow-alt"></i>
         </div>
@@ -641,13 +602,6 @@ function Events() {
           committed to upholding the highest standards of healthcare excellence,
           ensuring full compliance with all industry regulations and best
           practices to provide safe and effective treatments to our patients.
-        </p>
-        <p>
-          To demonstrate our unwavering commitment to asepsis, we open sealed
-          and pouched sterile instruments in front of each patient. At Clove
-          Dental, we take patient safety very seriously and will continue to
-          strictly adhere to our sterilization protocols to provide the highest
-          level of care possible.
         </p>
         <hr />
         <div className="steps">
