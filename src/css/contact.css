@@ -98,10 +98,13 @@
 
 /* form */
 
-.form {
+.contact .form {
   width: 1250px;
   display: flex;
   justify-content: space-between;
+  padding: 100px 0;
+  padding-bottom: 250px;
+  gap: 50px;
 }
 
 /* features */
@@ -109,20 +112,317 @@
 .contact .features {
   display: flex;
   flex-direction: column;
+  gap: 25px;
 }
 
 .contact .feature {
-  width: 250px;
+  width: 400px;
   height: fit-content;
+  background: #94aac9;
+  padding: 35px 50px;
+  padding-bottom: 45px;
+  border-radius: 40px;
 }
 
 .contact .feature h1 {
   font-size: 14px;
   display: flex;
   align-items: center;
+  margin-bottom: 17px;
 }
 
 .contact .feature h1 i {
   font-size: 32px;
   margin-right: 7px;
+  margin-left: -5px;
+}
+
+.contact .feature span {
+  color: rgba(0, 0, 0, 0.54);
+  line-height: 28px;
+}
+
+.contact .feature.b {
+  background: #f1ebdf;
+}
+
+.contact .feature span a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.contact .feature span a:last-of-type {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.contact .feature.c {
+  background: #ccd9d6;
+}
+
+.contact .feature span b {
+  font-weight: 500;
+}
+
+/* get in touch */
+
+.contact .getintouch {
+  width: 100%;
+}
+
+.contact .getintouch > h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 44px;
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+
+.contact .getintouch > span {
+  display: block;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.contact .getintouch > span:first-of-type {
+  padding-bottom: 6px;
+}
+
+.contact .getintouch .container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  padding: 30px;
+  border-radius: 20px;
+  margin-top: 25px;
+}
+
+.contact .getintouch .container label {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 14px;
+}
+
+.contact .getintouch .container input,
+.contact .getintouch .container textarea {
+  margin-top: -11px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 15px;
+  background: #e1e6eb;
+}
+
+.contact .getintouch .container input {
+  border-radius: 35px;
+}
+
+.contact .getintouch .container .terms_conditions {
+  margin-top: 8px;
+}
+
+.contact .getintouch .container .terms_conditions input {
+  width: fit-content;
+  display: inline;
+}
+
+.contact .getintouch .container .terms_conditions label {
+  width: fit-content;
+  display: inline;
+}
+
+.contact .getintouch .container button {
+  width: fit-content;
+  padding: 10px 23px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  background: #020d2b;
+  color: white;
+}
+
+.contact .getintouch .container button i {
+  background: white;
+  color: #020d2b;
+  border-radius: 50%;
+  padding: 2px;
+  font-size: 18px;
+  margin-right: 9px;
+}
+
+@media only screen and (max-width: 1350px) {
+  .contact .banner {
+    width: calc(100vw - 50px);
+    height: fit-content;
+    margin-bottom: 0;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 0;
+  }
+
+  .contact .banner .banner_img {
+    width: 100%;
+    height: 175px;
+  }
+
+  .contact .banner img {
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  .contact .banner .content {
+    width: 100%;
+    position: relative;
+    bottom: -15px;
+    padding: 35px;
+    padding-left: 40px;
+    padding-top: 20px;
+  }
+
+  .contact .banner .right {
+    flex-direction: column;
+    gap: 13px;
+  }
+
+  .contact .banner .right .call {
+    padding: 6px;
+  }
+
+  .contact .banner .right .call i {
+    font-size: 24px;
+    padding: 9px;
+  }
+
+  .contact .banner .right .call {
+    font-size: 15px;
+  }
+
+  .contact .banner .right .call span {
+    font-size: 15px;
+  }
+
+  .contact .form {
+    width: calc(100vw - 50px);
+    padding: 100px 0;
+    padding-bottom: 100px;
+    gap: 50px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .contact .banner {
+    width: 970px;
+  }
+
+  .contact .form {
+    width: 970px;
+    padding-bottom: 75px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .contact .banner {
+    width: 693px;
+  }
+
+  .contact .form {
+    width: 693px;
+    padding-bottom: 75px;
+    gap: 35px;
+  }
+
+  .contact .features {
+    width: 500px;
+  }
+
+  .contact .feature {
+    width: 100%;
+    height: fit-content;
+    background: #94aac9;
+    padding: 30px 35px;
+    padding-bottom: 30px;
+    border-radius: 40px;
+  }
+}
+
+@media only screen and (max-width: 753px) {
+  .contact .banner {
+    width: 532px;
+  }
+
+  .contact .banner .content {
+    flex-direction: column;
+    align-items: start;
+    gap: 25px;
+    padding: 45px 40px;
+  }
+
+  .contact .banner .content .call {
+    margin-left: 0;
+  }
+
+  .contact .form {
+    width: 532px;
+    padding-bottom: 25px;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact .features {
+    width: 100%;
+  }
+
+  .contact .feature {
+    width: 100%;
+    height: fit-content;
+    background: #94aac9;
+    padding: 30px 35px;
+    padding-bottom: 30px;
+    border-radius: 40px;
+  }
+
+  .contact .getintouch > h1 {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 556px) {
+  .contact .banner {
+    width: calc(100vw - 24px);
+  }
+
+  .contact .banner .content {
+    gap: 30px;
+    padding: 50px 25px;
+  }
+
+  .contact .form {
+    width: calc(100vw - 24px);
+    padding-bottom: 25px;
+    gap: 25px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  .contact .features {
+    width: 100%;
+  }
+
+  .contact .feature {
+    width: 100%;
+    height: fit-content;
+    background: #94aac9;
+    padding: 30px 35px;
+    padding-bottom: 30px;
+    border-radius: 40px;
+  }
+
+  .contact .getintouch > h1 {
+    font-size: 28px;
+  }
 }
