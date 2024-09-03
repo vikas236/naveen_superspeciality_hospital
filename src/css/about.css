@@ -261,14 +261,14 @@
 
 /* hospital features */
 
-.features {
+.about .features {
   width: 1250px;
   display: flex;
   padding-bottom: 150px;
   gap: 25px;
 }
 
-.features .feature {
+.about .features .feature {
   background: #9bbbea;
   border-radius: 40px;
   padding: 50px 45px;
@@ -276,25 +276,25 @@
   height: 250px;
 }
 
-.features .feature:nth-child(2) {
+.about .features .feature:nth-child(2) {
   background: #ccd9d6;
 }
 
-.features .feature:nth-child(3) {
+.about .features .feature:nth-child(3) {
   background: #94aac9;
 }
 
-.features .feature i {
+.about .features .feature i {
   font-size: 32px;
 }
 
-.features .feature h2 {
+.about .features .feature h2 {
   font-size: 16px;
   letter-spacing: 1px;
   margin-top: 25px;
 }
 
-.features .feature p {
+.about .features .feature p {
   line-height: 25px;
   color: rgba(0, 0, 0, 0.57);
   margin-top: 10px;
@@ -457,13 +457,13 @@
     font-size: 14px;
   }
 
-  .features {
+  .about .features {
     width: calc(100% - 50px);
     padding-bottom: 150px;
     gap: 25px;
   }
 
-  .features .feature {
+  .about .features .feature {
     height: fit-content;
   }
 
@@ -559,11 +559,11 @@
     left: calc(92% - 1px);
   }
 
-  .features {
+  .about .features {
     width: 970px;
   }
 
-  .features .feature {
+  .about .features .feature {
     padding: 30px 35px;
   }
 
@@ -626,14 +626,14 @@
     left: calc(91% - 1px);
   }
 
-  .features {
+  .about .features {
     width: 670px;
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 25px;
   }
 
-  .features .feature {
+  .about .features .feature {
     width: calc(50% - 13px);
     padding: 40px 50px;
   }
@@ -739,11 +739,11 @@
     margin-top: 10px;
   }
 
-  .features {
+  .about .features {
     width: 532px;
   }
 
-  .features .feature {
+  .about .features .feature {
     padding: 30px 25px;
     padding-bottom: 5px;
   }
@@ -776,14 +776,14 @@
     height: 400px;
   }
 
-  .features {
+  .about .features {
     width: calc(100vw - 24px);
     height: fit-content;
     flex-direction: column;
     padding-bottom: 50px;
   }
 
-  .features .feature {
+  .about .features .feature {
     width: 100%;
   }
 

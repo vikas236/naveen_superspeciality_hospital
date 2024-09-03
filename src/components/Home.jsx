@@ -34,6 +34,8 @@ import hair_loss from "../images/home/hair_loss.png";
 import female_hair from "../images/home/types0.png";
 import male_hair from "../images/home/types1.png";
 
+let page_address;
+
 const Home = () => {
   return (
     <div className="home">
@@ -163,72 +165,88 @@ function Experiences() {
   let reviews_direction = 0;
 
   function reviewLeft() {
-    const reviews = document.querySelector(".reviews");
+    updateAddress();
+    if (page_address == "" || page_address == "home") {
+      const reviews = document.querySelector(".reviews");
 
-    if (review_no < 3 && !reviews.classList.contains("loading")) {
-      review_no++;
-      const username = document.querySelector(".reviews .username");
-      const string = document.querySelector(".reviews .r p");
-      const img = document.querySelector(".reviews .r img");
+      if (review_no < 3 && !reviews.classList.contains("loading")) {
+        review_no++;
+        const username = document.querySelector(".reviews .username");
+        const string = document.querySelector(".reviews .r p");
+        const img = document.querySelector(".reviews .r img");
 
-      username.innerHTML = data[review_no][0];
-      stringAnimate(data[review_no][1], string, reviews);
-      img.src = data[review_no][2];
+        username.innerHTML = data[review_no][0];
+        stringAnimate(data[review_no][1], string, reviews);
+        img.src = data[review_no][2];
+      }
     }
   }
 
   function reviewRight() {
-    const reviews = document.querySelector(".reviews");
+    updateAddress();
+    if (page_address == "" || page_address == "home") {
+      const reviews = document.querySelector(".reviews");
 
-    if (review_no > 0 && !reviews.classList.contains("loading")) {
-      review_no--;
-      const username = document.querySelector(".reviews .username");
-      const string = document.querySelector(".reviews .r p");
-      const img = document.querySelector(".reviews .r img");
+      if (review_no > 0 && !reviews.classList.contains("loading")) {
+        review_no--;
+        const username = document.querySelector(".reviews .username");
+        const string = document.querySelector(".reviews .r p");
+        const img = document.querySelector(".reviews .r img");
 
-      img.src = data[review_no][2];
-      username.innerHTML = data[review_no][0];
-      stringAnimate(data[review_no][1], string, reviews);
-      img.src = data[review_no][2];
+        img.src = data[review_no][2];
+        username.innerHTML = data[review_no][0];
+        stringAnimate(data[review_no][1], string, reviews);
+        img.src = data[review_no][2];
+      }
     }
   }
 
   function stringAnimate(string, container, parent) {
-    parent.classList.add("loading");
-    for (let i = 0; i <= string.length; i++) {
+    updateAddress();
+    if (page_address == "" || page_address == "home") {
+      parent.classList.add("loading");
+      for (let i = 0; i <= string.length; i++) {
+        setTimeout(() => {
+          container.innerHTML = '"' + string.substr(0, i);
+        }, i * 15);
+      }
       setTimeout(() => {
-        container.innerHTML = '"' + string.substr(0, i);
-      }, i * 15);
+        parent.classList.remove("loading");
+      }, string.length * 17);
     }
-    setTimeout(() => {
-      parent.classList.remove("loading");
-    }, string.length * 17);
   }
 
   function moveInterior(dot) {
-    const dots = document.querySelectorAll(".interior .dot");
-    const container = document.querySelector(".interior .interior_wrapper");
+    updateAddress();
+    if (page_address == "" || page_address == "home") {
+      const dots = document.querySelectorAll(".interior .dot");
+      const container = document.querySelector(".interior .interior_wrapper");
 
-    dots.forEach((e) => e.classList.remove("active"));
-    dot.classList.add("active");
+      dots.forEach((e) => e.classList.remove("active"));
+      dot.classList.add("active");
 
-    dots.forEach((e, i) => {
-      if (e.classList.contains("active")) {
-        image_no = i;
-      }
-    });
+      dots.forEach((e, i) => {
+        if (e.classList.contains("active")) {
+          image_no = i;
+        }
+      });
 
-    container.style.left = "-" + image_no * 100 + "%";
+      container.style.left = "-" + image_no * 100 + "%";
+    }
   }
 
   function automoveInterior() {
-    const dots = document.querySelectorAll(".interior .dot");
+    updateAddress();
+    if (page_address == "" || page_address == "home") {
+      const dots = document.querySelectorAll(".interior .dot");
 
-    setTimeout(automoveInterior, 5500);
-    if (image_no < 2 && gallery_direction === 0) dots[++image_no].click();
-    else if (image_no > 0 && gallery_direction === 1) dots[--image_no].click();
-    else if (image_no === 0) gallery_direction = 0;
-    else if (image_no === 2) gallery_direction = 1;
+      setTimeout(automoveInterior, 5500);
+      if (image_no < 2 && gallery_direction === 0) dots[++image_no].click();
+      else if (image_no > 0 && gallery_direction === 1)
+        dots[--image_no].click();
+      else if (image_no === 0) gallery_direction = 0;
+      else if (image_no === 2) gallery_direction = 1;
+    }
   }
 
   function automoveReviews() {
@@ -421,28 +439,34 @@ function Tests() {
   let treatment_no = 0;
 
   function moveBox() {
-    const dots = document.querySelectorAll(".treatments .dot");
-    const container = document.querySelector(".treatments_slider .wrapper");
+    updateAddress();
+    if (page_address == "" || page_address == "home") {
+      const dots = document.querySelectorAll(".treatments .dot");
+      const container = document.querySelector(".treatments_slider .wrapper");
 
-    dots.forEach((e, i) => {
-      e.addEventListener("click", () => {
-        if (treatment_no !== i) {
-          dots.forEach((e) => e.classList.remove("active"));
-          e.classList.add("active");
-          container.style.left = "-" + i * 100 + "%";
-          treatment_no = i;
-        }
+      dots.forEach((e, i) => {
+        e.addEventListener("click", () => {
+          if (treatment_no !== i) {
+            dots.forEach((e) => e.classList.remove("active"));
+            e.classList.add("active");
+            container.style.left = "-" + i * 100 + "%";
+            treatment_no = i;
+          }
+        });
       });
-    });
+    }
   }
 
   function autoMoveTreatments() {
-    const dots = document.querySelectorAll(".treatments .dot");
+    updateAddress();
+    if (page_address == "" || page_address == "home") {
+      const dots = document.querySelectorAll(".treatments .dot");
 
-    setTimeout(autoMoveTreatments, 10500);
-    if (treatment_no === 3) treatment_no = 0;
-    if (treatment_no === 0 || dots[treatment_no].classList.contains("active"))
-      dots[++treatment_no].click();
+      setTimeout(autoMoveTreatments, 10500);
+      if (treatment_no === 3) treatment_no = 0;
+      if (treatment_no === 0 || dots[treatment_no].classList.contains("active"))
+        dots[++treatment_no].click();
+    }
   }
 
   document.addEventListener("DOMContentLoaded", () => {
@@ -680,6 +704,15 @@ function Doctors() {
         </div>
       </h1>
     </div>
+  );
+}
+
+function updateAddress() {
+  page_address = window.location.href;
+  page_address = page_address.replace("http://localhost:3000/", "");
+  page_address = page_address.replace(
+    "https://naveen-superspeciality-hospital.vercel.app/",
+    ""
   );
 }
 

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../css/nav.css";
 import Logo from "../images/logo1.png";
 import tooth_icon from "../images/tooth_icon.svg";
@@ -136,6 +136,15 @@ function Ham() {
     logo.classList.remove("inactive");
     wall.classList.remove("active");
   }
+
+  function NavLinks() {
+    const links = document.querySelectorAll(".nav1 .link");
+    links.forEach((e) => e.addEventListener("click", closeSidebar));
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    NavLinks();
+  });
 
   return (
     <div onClick={hamAnimation} className="ham">
