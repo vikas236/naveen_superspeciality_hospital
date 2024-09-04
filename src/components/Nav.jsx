@@ -76,7 +76,7 @@ function NavLinks() {
         </Link>
       </li>
       <li>
-        <Link to="/contact" className="link">
+        <Link to="/treatments" className="link">
           <i className="bx bxs-notepad"></i>
           Treatments
         </Link>
@@ -119,6 +119,7 @@ function Ham() {
 
     wall.addEventListener("click", () => closeSidebar());
   }
+
   setTimeout(() => {
     document.addEventListener("DOMContentLoaded", wallAnimation());
   }, 25);
@@ -128,6 +129,8 @@ function Ham() {
     sidebar.classList.add("active");
     logo.classList.add("inactive");
     wall.classList.add("active");
+
+    document.body.style.overflow = "hidden";
   }
 
   function closeSidebar() {
@@ -135,6 +138,8 @@ function Ham() {
     sidebar.classList.remove("active");
     logo.classList.remove("inactive");
     wall.classList.remove("active");
+
+    document.body.style.overflow = "visible";
   }
 
   function NavLinks() {
