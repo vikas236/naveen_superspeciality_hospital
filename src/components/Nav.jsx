@@ -76,21 +76,45 @@ function NavLinks() {
         </Link>
       </li>
       <li>
-        <Link to="/treatments" className="link">
+        <Link to="/hairtransplantation" className="link">
           <i className="bx bxs-notepad"></i>
-          Treatments
+          Hair Transplantation
         </Link>
       </li>
       <li>
-        <Link to="/contact" className="link">
+        <Link to="/fuetransplant" className="link">
+          <i className="bx bxs-notepad"></i>
+          Fue Transplant
+        </Link>
+      </li>
+      <li>
+        <Link to="/nonsurgicalhair" className="link">
+          <i className="bx bxs-notepad"></i>
+          Non Surgical Hair Treatment
+        </Link>
+      </li>
+      <li>
+        <Link to="/malehairloss" className="link">
           <i className="bx bx-male-sign"></i>
           Male Hair Loss
         </Link>
       </li>
       <li>
-        <Link to="/contact" className="link">
+        <Link to="/femalehairloss" className="link">
           <i className="bx bx-female-sign"></i>
           Female Hair Loss
+        </Link>
+      </li>
+      <li>
+        <Link to="/eyebrowhairloss" className="link">
+          <i className="bx bxs-notepad"></i>
+          EyeBrow Hair Loss
+        </Link>
+      </li>
+      <li>
+        <Link to="/beardhairloss" className="link">
+          <i className="bx bxs-notepad"></i>
+          Beard Hair Loss
         </Link>
       </li>
       <li>

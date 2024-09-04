@@ -21,17 +21,14 @@
 }
 
 .treatments > div {
-  margin: 0;
-}
-
-.treatments > div {
   width: 100vw;
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
   gap: 7px;
   column-gap: 50px;
   padding: 50px 100px;
+  margin: 0;
 }
 
 .treatments > div.causes,
@@ -109,6 +106,58 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
+.treatments span.sub_heading {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 800;
+}
+
+.treatments .banner_box {
+  width: 100vw !important;
+  padding: 0 !important;
+  position: relative;
+}
+
+.treatments .banner_box:first-of-type {
+  margin-top: 25px;
+}
+
+.treatments .banner_box:first-of-type h1 {
+  position: absolute;
+  inset: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  font-size: 5vw;
+  color: #94aac9;
+}
+
+.treatments .banner_box .content {
+  width: calc(100% - 25px);
+  position: absolute;
+  inset: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 1;
+  text-align: center;
+}
+
+.treatments img.banner,
+.treatments img.banner0 {
+  width: 100vw;
+  height: fit-content;
+  border-radius: 0;
+  position: relative;
+  object-fit: cover;
+}
+
+.treatments img.banner0 {
+  height: 450px;
+}
+
+.treatments .pattern {
+  flex-direction: column;
+}
+
 @media only screen and (max-width: 1350px) {
   .treatments > div {
     width: calc(100% - 50px);
@@ -149,6 +198,10 @@
 
   .treatments > div:nth-of-type(odd) {
     flex-direction: column-reverse;
+  }
+
+  .treatments > div.men:nth-of-type(odd) {
+    flex-direction: column;
   }
 }
 

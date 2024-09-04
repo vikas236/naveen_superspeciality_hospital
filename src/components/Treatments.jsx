@@ -1,5 +1,6 @@
 import "../css/treatments.css";
 
+import banner from "../images/treatments/banner1.png";
 import hair from "../images/treatments/hair.jpg";
 import hair0 from "../images/treatments/hair0.jpg";
 import hair1 from "../images/treatments/hair1.jpg";
@@ -12,9 +13,13 @@ import hair4 from "../images/treatments/hair4.jpg";
 function Treatments() {
   return (
     <div className="treatments">
+      <div className="banner_box">
+        <img src={banner} alt="" className="banner" />
+        <h1>Hair Transplant Procedure</h1>
+      </div>
       <div>
         <div className="content">
-          <h1>Effective Hair Loss Treatment in Melbourne</h1>
+          <h1>Effective Hair Loss Treatment</h1>
           <p>
             Are you suffering from excessive hair loss? When hair loss is severe
             or occurs prematurely, it can be emotionally distressing. Here what
@@ -54,10 +59,10 @@ function Treatments() {
         <div className="content">
           <h1>Leading clinics providing</h1>
           <p>
-            Atlantis Medical is one of the leading clinics providing hair loss
-            treatment in Melbourne. All you need to do is book an appointment
-            for an initial consultation and get started with your personalised
-            hair treatment plan.
+            Naveen Superspeciality Hospital is one of the leading clinics
+            providing hair loss treatment in Ravulapalem. All you need to do is
+            book an appointment for an initial consultation and get started with
+            your personalised hair treatment plan.
           </p>
           <p>
             By selecting our hair loss treatment clinic, you gain access to
@@ -70,8 +75,8 @@ function Treatments() {
       <div>
         <p>
           What are you waiting for? When you choose our hair loss clinic in
-          Melbourne, you can expect professional expertise along with access to
-          advanced treatment options.
+          Ravulupalem, you can expect professional expertise along with access
+          to advanced treatment options.
         </p>
       </div>
       <div>
@@ -278,7 +283,7 @@ function Treatments() {
           problem and suggest suitable hair loss treatment.
         </span>
       </div>
-      <div>
+      <div className="men">
         <div className="content">
           <h1>Types of Hair Loss In Men</h1>
           <p>
@@ -335,7 +340,7 @@ function Treatments() {
         <p>
           Whether you are experiencing hair loss, have a hair infection or are
           suffering from hair shaft disorders, you need a reliable hair loss
-          treatment plan in Melbourne.
+          treatment plan in Ravulupalem.
         </p>
         <p>Following are the types of hair loss in women:</p>
         <div className="container">
@@ -402,10 +407,11 @@ function Treatments() {
           <p>
             Need hair loss consultation? Get access to hair loss doctor who can
             evaluate and diagnose the underlying causes of hair loss only at
-            Atlantis Medical. We offer tailored treatment plans based on our
-            evaluation. We work by simply considering the level of hair loss
-            severity and trying to determine the underlying cause. By addressing
-            the contributing factors, we then suggest a suitable treatment plan.
+            Naveen Superspeciality Hospital. We offer tailored treatment plans
+            based on our evaluation. We work by simply considering the level of
+            hair loss severity and trying to determine the underlying cause. By
+            addressing the contributing factors, we then suggest a suitable
+            treatment plan.
           </p>
           <p>
             Benefit from our free consultation and get personalised treatment
@@ -422,8 +428,8 @@ function Treatments() {
           <p>
             There is no ‘best’ technique for hair transplant Each person has
             their own individual requirements that will dictate which technique
-            is most appropriate for them specifically. At Atlantis Medical, we
-            are experts in all forms of hair restoration.
+            is most appropriate for them specifically. At Naveen Superspeciality
+            Hospital, we are experts in all forms of hair restoration.
           </p>
           <button>Book A Consultation</button>
         </div>
