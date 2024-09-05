@@ -106,6 +106,24 @@ function NavLinks() {
         </Link>
       </li>
       <li>
+        <Link to="/facialtrauma" className="link">
+          <i className="bx bxs-notepad"></i>
+          Facial Trauma
+        </Link>
+      </li>
+      <li>
+        <Link to="/tmjtreatment" className="link">
+          <i className="bx bxs-notepad"></i>
+          TMJ Treatment
+        </Link>
+      </li>
+      <li>
+        <Link to="/dentistry" className="link">
+          <img src={tooth_icon} alt="" />
+          Dental
+        </Link>
+      </li>
+      <li>
         <Link to="/eyebrowhairloss" className="link">
           <i className="bx bxs-notepad"></i>
           EyeBrow Hair Loss
@@ -115,12 +133,6 @@ function NavLinks() {
         <Link to="/beardhairloss" className="link">
           <i className="bx bxs-notepad"></i>
           Beard Hair Loss
-        </Link>
-      </li>
-      <li>
-        <Link to="/contact" className="link">
-          <img src={tooth_icon} alt="" />
-          Dental
         </Link>
       </li>
     </ul>

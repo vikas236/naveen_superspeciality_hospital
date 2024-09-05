@@ -12,6 +12,9 @@ import MaleHairLoss from "./components/MaleHairLoss";
 import FemaleHairLoss from "./components/FemaleHairLoss";
 import EyeBrowHairLoss from "./components/EyeBrowHairLoss";
 import BeardHairLoss from "./components/BeardHairLoss";
+import FacialTrauma from "./components/FacialTrauma";
+import Tmj from "./components/Tmj";
+import Dentistry from "./components/Dentistry";
 import NotFound from "./components/NotFound";
 
 function App() {
@@ -29,6 +32,9 @@ function App() {
         <Route exact path="/femalehairloss" Component={FemaleHairLoss} />
         <Route exact path="/eyebrowhairloss" Component={EyeBrowHairLoss} />
         <Route exact path="/beardhairloss" Component={BeardHairLoss} />
+        <Route exact path="/facialtrauma" Component={FacialTrauma} />
+        <Route exact path="/tmjtreatment" Component={Tmj} />
+        <Route exact path="/dentistry" Component={Dentistry} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

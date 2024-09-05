@@ -20,6 +20,13 @@
   text-align: center;
 }
 
+.treatments p,
+.treatments li {
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.74);
+}
+
 .treatments > div {
   width: 100vw;
   display: flex;
@@ -46,7 +53,11 @@
 }
 
 .treatments .content {
-  width: 50%;
+  width: 60%;
+}
+
+.treatments .idle .content {
+  width: 100%;
 }
 
 .treatments iframe {
@@ -56,7 +67,7 @@
 }
 
 .treatments img {
-  width: 50%;
+  width: 100%;
   height: 100%;
   object-fit: contain;
   border-radius: 15px;
@@ -115,6 +126,11 @@
   width: 100vw !important;
   padding: 0 !important;
   position: relative;
+  overflow: hidden;
+}
+
+.treatments .banner_box.small {
+  height: 25vw;
 }
 
 .treatments .banner_box:first-of-type {
@@ -141,6 +157,10 @@
   text-align: center;
 }
 
+.treatments .banner_box.small h1 {
+  color: white;
+}
+
 .treatments img.banner,
 .treatments img.banner0 {
   width: 100vw;
@@ -156,6 +176,10 @@
 
 .treatments .pattern {
   flex-direction: column;
+}
+
+.treatments .no_padding {
+  padding: 0;
 }
 
 @media only screen and (max-width: 1350px) {
