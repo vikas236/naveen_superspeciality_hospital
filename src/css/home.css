@@ -458,7 +458,7 @@
 }
 
 .home .experiences .item.b p {
-  height: 65px;
+  height: 110px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
@@ -892,9 +892,9 @@
   cursor: pointer;
 }
 
-/* treatments */
+/* tests */
 
-.treatments {
+.tests {
   width: calc(100vw - 200px);
   height: 800px;
   margin-top: 135px;
@@ -902,7 +902,7 @@
   gap: 25px;
 }
 
-.treatments .doctor {
+.tests .doctor {
   width: 50%;
   height: 100%;
   background: grey;
@@ -911,7 +911,7 @@
   position: relative;
 }
 
-.treatments .doctor img {
+.tests .doctor img {
   width: 100%;
   height: 100%;
   object-position: center;
@@ -921,7 +921,7 @@
   transform: translateY(-50%);
 }
 
-.treatments .doctor .doctor_award {
+.tests .doctor .doctor_award {
   position: absolute;
   bottom: 15px;
   left: 0;
@@ -935,17 +935,17 @@
   border-bottom-left-radius: 0;
 }
 
-.treatments .doctor .doctor_award .content {
+.tests .doctor .doctor_award .content {
   padding: 0;
 }
 
-.treatments .doctor .doctor_award i:first-of-type {
+.tests .doctor .doctor_award i:first-of-type {
   font-size: 54px;
   color: rgb(148, 170, 201);
   margin-right: 10px;
 }
 
-.treatments .doctor .doctor_award h3 {
+.tests .doctor .doctor_award h3 {
   width: fit-content;
   font-size: 15px;
   font-weight: 500;
@@ -953,14 +953,14 @@
   margin: 0;
 }
 
-.treatments .doctor .doctor_award span {
+.tests .doctor .doctor_award span {
   margin-top: 3px;
   margin-bottom: 2px;
   display: inline-block;
   font-weight: 700;
 }
 
-.treatments .doctor .doctor_award p {
+.tests .doctor .doctor_award p {
   padding: 0;
   margin: 0;
   font-weight: 300;
@@ -969,7 +969,7 @@
   margin: 0;
 }
 
-.treatments .doctor .doctor_award i:last-of-type {
+.tests .doctor .doctor_award i:last-of-type {
   margin-right: 15px;
   background: #9bbbea;
   border-radius: 50%;
@@ -978,12 +978,12 @@
   cursor: pointer;
 }
 
-.treatments .doctor .doctor_award i:last-of-type:hover {
+.tests .doctor .doctor_award i:last-of-type:hover {
   background: #94aac9;
   color: white;
 }
 
-.treatments > .content {
+.tests > .content {
   width: 50%;
   background: #e1e6eb;
   display: flex;
@@ -993,21 +993,21 @@
   position: relative;
 }
 
-.treatments > .content .sub_heading {
+.tests > .content .sub_heading {
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 1px;
   color: #417ed7;
 }
 
-.treatments > .content h2 {
+.tests > .content h2 {
   font-size: 44px;
   font-weight: 400;
   margin: 0;
   margin-top: 20px;
 }
 
-.treatments .treatments_slider {
+.tests .tests_slider {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -1015,7 +1015,7 @@
   margin-top: 50px;
 }
 
-.treatments .treatments_slider .wrapper {
+.tests .tests_slider .wrapper {
   width: 400%;
   height: 100%;
   display: flex;
@@ -1024,7 +1024,7 @@
   left: 0;
 }
 
-.treatments .treatments_slider .item {
+.tests .tests_slider .item {
   width: 100%;
   background: white;
   display: flex;
@@ -1033,7 +1033,7 @@
   position: relative;
 }
 
-.treatments .treatments_slider img {
+.tests .tests_slider img {
   width: 165px;
   position: absolute;
   top: -5px;
@@ -1042,8 +1042,8 @@
   transition: 0.3s;
 }
 
-.treatments .treatments_slider .content > span,
-.treatments .treatments_slider .item > span {
+.tests .tests_slider .content > span,
+.tests .tests_slider .item > span {
   width: fit-content;
   border: 1px solid black;
   padding: 6px 11px;
@@ -1053,17 +1053,17 @@
   border: 1px soild #417ed7;
 }
 
-.treatments .treatments_slider .content > span:hover,
-.treatments .treatments_slider .item > span:hover {
+.tests .tests_slider .content > span:hover,
+.tests .tests_slider .item > span:hover {
   color: #417ed7;
   border: 1px solid #417ed7;
 }
 
-.treatments .treatments_slider .item > span {
+.tests .tests_slider .item > span {
   margin-left: 13px;
 }
 
-.treatments .treatments_slider ul {
+.tests .tests_slider ul {
   width: 75%;
   height: 75%;
   padding-left: 0;
@@ -1076,7 +1076,7 @@
   padding-top: 15px;
 }
 
-.treatments .treatments_slider ul li {
+.tests .tests_slider ul li {
   width: fit-content;
   padding: 2px 3px;
   padding-bottom: 5px;
@@ -1086,7 +1086,7 @@
   left: 33px;
 }
 
-.treatments .treatments_slider ul li i {
+.tests .tests_slider ul li i {
   font-size: 24px;
   position: absolute;
   left: -30px;
@@ -1094,17 +1094,17 @@
   top: 0;
 }
 
-.treatments .treatments_slider ul li:hover {
+.tests .tests_slider ul li:hover {
   left: 13px;
   cursor: pointer;
   color: #417ed7;
 }
 
-.treatments .treatments_slider ul li:hover i {
+.tests .tests_slider ul li:hover i {
   left: 100%;
 }
 
-.treatments .treatments_slider button {
+.tests .tests_slider button {
   width: fit-content;
   border: 1px solid black;
   background: none;
@@ -1119,17 +1119,17 @@
   right: 35px;
 }
 
-.treatments .treatments_slider button:hover {
+.tests .tests_slider button:hover {
   color: #417ed7;
   border: 1px solid #417ed7;
 }
 
-.treatments .treatments_slider .item:hover img {
+.tests .tests_slider .item:hover img {
   top: -20px;
   right: -20px;
 }
 
-.treatments .dots {
+.tests .dots {
   position: absolute;
   bottom: 45px;
   display: flex;
@@ -1138,7 +1138,7 @@
   transform: translateX(-50%);
 }
 
-.treatments .dots .dot {
+.tests .dots .dot {
   width: 7px;
   height: 7px;
   background: rgba(0, 0, 0, 0.5);
@@ -1147,7 +1147,7 @@
   transition: 0.5s;
 }
 
-.treatments .dots .dot.active {
+.tests .dots .dot.active {
   width: 13px;
   height: 13px;
   background: black;
@@ -1521,7 +1521,7 @@
     margin-bottom: 80px;
   }
 
-  .treatments .doctor .doctor_award {
+  .tests .doctor .doctor_award {
     margin-right: 50px;
   }
 
@@ -1529,29 +1529,29 @@
     width: calc(100vw - 100px);
   }
 
-  .treatments {
+  .tests {
     width: calc(100vw - 50px);
   }
 
-  .treatments > .content {
+  .tests > .content {
     padding: 85px 40px;
   }
 
-  .treatments .treatments_slider .item {
+  .tests .tests_slider .item {
     height: fit-content;
     padding: 35px 30px;
   }
 
-  .treatments .treatments_slider p {
+  .tests .tests_slider p {
     width: 100%;
     display: none;
   }
 
-  .treatments .treatments_slider img {
+  .tests .tests_slider img {
     display: none;
   }
 
-  .treatments .treatments_slider button {
+  .tests .tests_slider button {
     margin-left: 0;
     margin-top: 15px;
   }
@@ -1736,15 +1736,15 @@
     padding-bottom: 65px;
   }
 
-  .treatments {
+  .tests {
     width: 970px;
   }
 
-  .treatments > .content h2 {
+  .tests > .content h2 {
     font-size: 32px;
   }
 
-  .treatments .treatments_slider .item {
+  .tests .tests_slider .item {
     height: 100%;
   }
 
@@ -1904,7 +1904,7 @@
     width: 693px;
   }
 
-  .treatments {
+  .tests {
     width: 693px;
     height: 1350px;
     flex-direction: column;
@@ -1912,12 +1912,12 @@
     margin-top: 85px;
   }
 
-  .treatments .doctor {
+  .tests .doctor {
     width: 100%;
     height: 100%;
   }
 
-  .treatments > .content {
+  .tests > .content {
     width: 100%;
     height: 45%;
   }
@@ -2071,30 +2071,30 @@
     width: 532px;
   }
 
-  .treatments {
+  .tests {
     width: 532px;
     height: 950px;
     margin-top: 45px;
   }
 
-  .treatments .content {
+  .tests .content {
     padding: 35px 30px;
     height: fit-content;
   }
 
-  .treatments .content .sub_heading {
+  .tests .content .sub_heading {
     font-size: 12px;
   }
 
-  .treatments .content h2 {
+  .tests .content h2 {
     font-size: 28px;
   }
 
-  .treatments .treatments_slider {
+  .tests .tests_slider {
     margin-top: 35px;
   }
 
-  .treatments .treatments_slider .item {
+  .tests .tests_slider .item {
     padding: 30px 15px;
   }
 
@@ -2262,7 +2262,7 @@
     width: calc(100vw - 30px);
   }
 
-  .treatments {
+  .tests {
     width: calc(100vw - 30px);
     height: 925px;
     margin-top: 45px;

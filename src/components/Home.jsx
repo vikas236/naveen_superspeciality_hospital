@@ -259,12 +259,12 @@ function Experiences() {
     }, 3500);
   }
 
-  document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
     const dots = document.querySelectorAll(".interior .dot");
     moveInterior(dots[0]);
     automoveInterior();
     automoveReviews();
-  });
+  }, 250);
 
   return (
     <div className="experiences">
@@ -370,7 +370,7 @@ function Experiences() {
 }
 
 function ScrollingText() {
-  document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
     const container = document.querySelector(".scrolling_text .wrapper");
     const text = document.createElement("span");
     text.className = "text";
@@ -380,7 +380,7 @@ function ScrollingText() {
           <span className="asterisk">*</span>
         </span>`;
     for (let i = 0; i < 10; i++) container.appendChild(text);
-  });
+  }, 250);
 
   return (
     <div className="scrolling_text">
@@ -441,8 +441,8 @@ function Tests() {
   function moveBox() {
     updateAddress();
     if (page_address == "" || page_address == "home") {
-      const dots = document.querySelectorAll(".treatments .dot");
-      const container = document.querySelector(".treatments_slider .wrapper");
+      const dots = document.querySelectorAll(".tests .dot");
+      const container = document.querySelector(".tests_slider .wrapper");
 
       dots.forEach((e, i) => {
         e.addEventListener("click", () => {
@@ -460,7 +460,7 @@ function Tests() {
   function autoMoveTreatments() {
     updateAddress();
     if (page_address == "" || page_address == "home") {
-      const dots = document.querySelectorAll(".treatments .dot");
+      const dots = document.querySelectorAll(".tests .dot");
 
       setTimeout(autoMoveTreatments, 10500);
       if (treatment_no === 3) treatment_no = 0;
@@ -469,13 +469,13 @@ function Tests() {
     }
   }
 
-  document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
     moveBox();
     setTimeout(autoMoveTreatments, 1000);
-  });
+  }, 250);
 
   return (
-    <div className="treatments">
+    <div className="tests">
       <div className="doctor">
         <img src={operating_doctor} alt="" />
         <div className="doctor_award">
@@ -497,7 +497,7 @@ function Tests() {
             Dental Care
           </b>
         </h2>
-        <div className="treatments_slider">
+        <div className="tests_slider">
           <div className="wrapper">
             <div className="item">
               <img src={arrow} alt="" className="arrow" />

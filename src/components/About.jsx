@@ -1,4 +1,3 @@
-import React from "react";
 import "../css/about.css";
 import banner_img from "../images/about/about_banner.jpg";
 import doctor1 from "../images/about/doctor1.jpg";

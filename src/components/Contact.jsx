@@ -48,7 +48,7 @@ function Features() {
     <div className="features">
       <div className="feature a">
         <h1>
-          <i class="bx bx-location-plus"></i>
+          <i className="bx bx-location-plus"></i>
           OUR LOCATIONS
         </h1>
         <span>
@@ -58,7 +58,7 @@ function Features() {
       </div>
       <div className="feature b">
         <h1>
-          <i class="bx bx-phone"></i>CONNECT WITH US
+          <i className="bx bx-phone"></i>CONNECT WITH US
         </h1>
         <span>
           CALL:
@@ -68,7 +68,7 @@ function Features() {
       </div>
       <div className="feature c">
         <h1>
-          <i class="bx bx-time-five"></i>VISITING HOURS
+          <i className="bx bx-time-five"></i>VISITING HOURS
         </h1>
         <span>
           <b> Visiting Hours: </b>Monday - Saturday: 10:00 AM - 6:00 PM
@@ -111,7 +111,7 @@ function GetInTouch() {
           <label htmlFor="checkbox">I agree with the terms</label>
         </div>
         <button>
-          <i class="bx bx-right-arrow-alt"></i>
+          <i className="bx bx-right-arrow-alt"></i>
           Send Message Now
         </button>
       </div>

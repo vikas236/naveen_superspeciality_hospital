@@ -4,7 +4,7 @@ import Logo from "../images/logo1.png";
 import tooth_icon from "../images/tooth_icon.svg";
 
 function Nav() {
-  document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
     const links = document.querySelectorAll("nav .link");
 
     links.forEach((l) => {
@@ -145,8 +145,8 @@ function Ham() {
   }
 
   setTimeout(() => {
-    document.addEventListener("DOMContentLoaded", wallAnimation());
-  }, 25);
+    wallAnimation();
+  }, 250);
 
   function showSidebar() {
     ham.classList.add("active");
@@ -171,9 +171,9 @@ function Ham() {
     links.forEach((e) => e.addEventListener("click", closeSidebar));
   }
 
-  document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
     NavLinks();
-  });
+  }, 250);
 
   return (
     <div onClick={hamAnimation} className="ham">

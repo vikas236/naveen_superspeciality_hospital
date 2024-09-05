@@ -41,7 +41,7 @@ function Fue() {
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
-          allowFullscreen
+          allowFullScreen
         ></iframe>
       </div>
       <div>
@@ -51,21 +51,21 @@ function Fue() {
           <h1>The Benefits of FUE Hair Transplant</h1>
           <ul>
             <li>
-              <i class="bx bx-check"></i>There are no linear scars after the
+              <i className="bx bx-check"></i>There are no linear scars after the
               procedure
             </li>
             <li>
-              <i class="bx bx-check"></i>It is a less invasive process
+              <i className="bx bx-check"></i>It is a less invasive process
             </li>
             <li>
-              <i class="bx bx-check"></i>It makes a great option for smaller
+              <i className="bx bx-check"></i>It makes a great option for smaller
               areas
             </li>
             <li>
-              <i class="bx bx-check"></i>Healing time is shorter
+              <i className="bx bx-check"></i>Healing time is shorter
             </li>
             <li>
-              <i class="bx bx-check"></i>The recovery period is shorter
+              <i className="bx bx-check"></i>The recovery period is shorter
             </li>
           </ul>
         </div>
@@ -106,16 +106,16 @@ function Fue() {
           <p>FUE hair transplant involves the following steps:</p>
           <ul>
             <li>
-              <i class="bx bx-check"></i>Individual hair follicles are extracted
-              from the side and back of the head.
+              <i className="bx bx-check"></i>Individual hair follicles are
+              extracted from the side and back of the head.
             </li>
             <li>
-              <i class="bx bx-check"></i>Tiny holes are made in the area of
+              <i className="bx bx-check"></i>Tiny holes are made in the area of
               balding, and the hair follicles are placed at an angle to match
               the original hair.
             </li>
             <li>
-              <i class="bx bx-check"></i>Aftercare is vital for the regrowth
+              <i className="bx bx-check"></i>Aftercare is vital for the regrowth
               phase. It is important to protect the grafts.
             </li>
           </ul>
@@ -142,30 +142,32 @@ function Fue() {
           <p>There are several advantages of FUE hair transplant.</p>
           <ul>
             <li>
-              <i class="bx bx-check"></i>There are no linear scars
+              <i className="bx bx-check"></i>There are no linear scars
             </li>
             <li>
-              <i class="bx bx-check"></i>Post-operative discomfort is minimal
+              <i className="bx bx-check"></i>Post-operative discomfort is
+              minimal
             </li>
             <li>
-              <i class="bx bx-check"></i>Suitable for people with short hair
+              <i className="bx bx-check"></i>Suitable for people with short hair
             </li>
             <li>
-              <i class="bx bx-check"></i>Healing time in the donor area is less
+              <i className="bx bx-check"></i>Healing time in the donor area is
+              less
             </li>
           </ul>
           <p>The disadvantages of the procedure are:</p>
           <ul>
             <li>
-              <i class="bx bx-check"></i>The growth rate is lower as compared to
-              FUT
+              <i className="bx bx-check"></i>The growth rate is lower as
+              compared to FUT
             </li>
             <li>
-              <i class="bx bx-check"></i>The yield is comparatively less
+              <i className="bx bx-check"></i>The yield is comparatively less
             </li>
             <li>
-              <i class="bx bx-check"></i>The back and sides of the head must be
-              shaved
+              <i className="bx bx-check"></i>The back and sides of the head must
+              be shaved
             </li>
           </ul>
         </div>
