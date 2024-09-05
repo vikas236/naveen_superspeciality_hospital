@@ -458,7 +458,7 @@
 }
 
 .home .experiences .item.b p {
-  height: 110px;
+  height: 65px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
@@ -1346,6 +1346,10 @@
 .doctors .doctor button:hover i {
   color: #f82828;
   background: white;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 @media only screen and (max-width: 1350px) {
@@ -2285,6 +2289,10 @@
 
   .doctors {
     width: calc(100vw - 30px);
+  }
+
+  .home .experiences .item.b p {
+    height: 115px;
   }
 }
 

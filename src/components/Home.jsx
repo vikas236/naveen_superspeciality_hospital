@@ -63,9 +63,11 @@ function HeroSection() {
           Expert hair transplants for natural results. Regain confidence with
           personalized care and advanced techniques
         </p>
-        <button>
-          <i className="bx bx-right-arrow-alt"></i>Learn More
-        </button>
+        <a href="/hairtransplantation">
+          <button>
+            <i className="bx bx-right-arrow-alt"></i>Learn More
+          </button>
+        </a>
       </div>
       <div className="box b">
         <h1>Are you suffering from hair loss</h1>
@@ -404,9 +406,11 @@ function OurServices() {
             Achieve natural-looking results with our advanced hair
             transplantation techniques
           </span>
-          <button>
-            <i className="bx bx-right-arrow-alt"></i> Read More
-          </button>
+          <a href="/hairtransplantation">
+            <button>
+              <i className="bx bx-right-arrow-alt"></i> Read More
+            </button>
+          </a>
         </div>
         <div className="service">
           <img src={hair0} alt="" className="hair0" />
@@ -415,9 +419,11 @@ function OurServices() {
             Restore your hair's natural fullness with our advanced non-surgical
             treatments
           </span>
-          <button>
-            <i className="bx bx-right-arrow-alt"></i> Read More
-          </button>
+          <a href="/nonsurgicalhair">
+            <button>
+              <i className="bx bx-right-arrow-alt"></i> Read More
+            </button>
+          </a>
         </div>
         <div className="service">
           <img src={tooth} alt="" />
@@ -485,7 +491,9 @@ function Tests() {
             <span>certified</span>
             <p>Hair Transplant Surgeon, Facial Trauma Surgeon</p>
           </div>
-          <i className="bx bx-right-arrow-alt"></i>
+          <a href="/about">
+            <i className="bx bx-right-arrow-alt"></i>
+          </a>
         </div>
       </div>
       <div className="content">
@@ -508,7 +516,9 @@ function Tests() {
                   <span>trichoscope analysis & examination</span>
                 </li>
               </ul>
-              <button>explore</button>
+              <a href="hairtransplantation">
+                <button>explore</button>
+              </a>
             </div>
             <div className="item">
               <img src={arrow} alt="" className="arrow" />
@@ -547,7 +557,9 @@ function Tests() {
                   <span> microblading</span>
                 </li>
               </ul>
-              <button>explore</button>
+              <a href="/nonsurgicalhair">
+                <button>explore</button>
+              </a>
             </div>
             <div className="item">
               <img src={arrow} alt="" className="arrow" />
@@ -574,7 +586,9 @@ function Tests() {
                   <span>maxillofacial tumors</span>
                 </li>
               </ul>
-              <button>explore</button>
+              <a href="/hairtransplantation">
+                <button>explore</button>
+              </a>
             </div>
             <div className="item">
               <img src={arrow} alt="" className="arrow" />
@@ -601,7 +615,9 @@ function Tests() {
                   <span>Dental Implants</span>
                 </li>
               </ul>
-              <button>explore</button>
+              <a href="/dentistry">
+                <button>explore</button>
+              </a>
             </div>
           </div>
         </div>
@@ -687,19 +703,23 @@ function Doctors() {
             <span className="name">Dr.Naveen Sayani</span>
             <span className="designation">Hair Transplant Surgeon</span>
             <span className="designation">Facial Trauma Surgeon</span>
-            <button>
-              <i className="bx bx-right-arrow-alt"></i>
-              Book An Appointment
-            </button>
+            <a href="tel: +91 9550937897">
+              <button>
+                <i className="bx bx-right-arrow-alt"></i>
+                Book An Appointment
+              </button>
+            </a>
           </div>
           <div className="doctor">
             <img src={female_doctor} alt="" />
             <span className="name">Dr.Gandham Sruthi</span>
             <span className="designation">Dentist</span>
-            <button>
-              <i className="bx bx-right-arrow-alt"></i>
-              Book An Appointment
-            </button>
+            <a href="tel: +91 6309737897">
+              <button>
+                <i className="bx bx-right-arrow-alt"></i>
+                Book An Appointment
+              </button>
+            </a>
           </div>
         </div>
       </h1>
