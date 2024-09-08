@@ -167,7 +167,7 @@ function Experiences() {
   let reviews_direction = 0;
 
   function reviewLeft() {
-    console.log("hi");
+    console.log("hi, there");
     updateAddress();
     if (page_address == "" || page_address == "home") {
       const reviews = document.querySelector(".reviews");
@@ -181,6 +181,7 @@ function Experiences() {
         username.innerHTML = data[review_no][0];
         stringAnimate(data[review_no][1], string, reviews);
         img.src = data[review_no][2];
+        console.log("hi");
       }
     }
   }
