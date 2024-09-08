@@ -43,11 +43,19 @@ const Footer = () => {
         <div className="column">
           <h1>Support</h1>
           <div className="list">
-            <a href="/Visitor Information">Visitor Information</a>
-            <a href="/Emergency Care">Emergency Care</a>
+            {/* <a href="/Visitor Information">Visitor Information</a>
+            <a href="/Emergency Care">Emergency Care</a> */}
             <a href="/Donate">Donate</a>
             <a href="/Online Services">Online Services</a>
             <a href="/Pay Your Bills">Pay Your Bills</a>
+            <div className="social_media">
+              <a href="https://www.instagram.com/naveen_hair_and_face_clinic?utm_source=qr">
+                <i class="bx bxl-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/people/Naveen-Hair-and-Face-clinic/100083928652875/?mibextid=LQQJ4d&rdid=byLkgpyUHGhqGBZ3&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FCWiZrUZxrmjZFkFp%2F%3Fmibextid%3DLQQJ4d">
+                <i class="bx bxl-facebook-circle"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>

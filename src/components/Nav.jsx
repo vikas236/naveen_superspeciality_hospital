@@ -180,7 +180,21 @@ function Ham() {
 
   function NavLinks() {
     const links = document.querySelectorAll(".nav1 .link");
+    const link_name = window.location.href
+      .replace("http://localhost:3000/", "")
+      .replace("https://www.naveenhfc.com/");
+
     links.forEach((e) => e.addEventListener("click", closeSidebar));
+    links.forEach((e) => {
+      const page_name = e.href
+        .replace("http://localhost:3000/", "")
+        .replace("https://www.naveenhfc.com/", "");
+
+      if (link_name == page_name) {
+        links.forEach((e) => e.classList.remove("active"));
+        e.classList.add("active");
+      }
+    });
   }
 
   setTimeout(() => {

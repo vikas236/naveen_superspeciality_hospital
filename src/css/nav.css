@@ -160,6 +160,7 @@ nav {
 
 .nav0 {
   width: calc(100vw - 200px);
+  min-height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -251,6 +252,7 @@ nav .ham.active .bar::after {
 @media only screen and (max-width: 1350px) {
   .nav0 {
     width: fit-content;
+    min-height: 87px;
     margin: 0;
     margin-top: 25px;
     margin-left: 25px;
@@ -301,6 +303,7 @@ nav .ham.active .bar::after {
 @media only screen and (max-width: 990px) {
   .nav0 {
     width: 694px;
+    min-height: 63px;
     margin-left: 0;
     position: relative;
     left: 50%;

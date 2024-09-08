@@ -99,6 +99,16 @@
   font-weight: 700;
 }
 
+.footer .social_media {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.footer .social_media i {
+  font-size: 38px;
+}
+
 @media only screen and (max-width: 1600px) {
   .footer {
     width: calc(100vw - 60px);
