@@ -238,10 +238,7 @@ function Experiences() {
     }
   }
 
-  console.log("its me");
-
   function automoveInterior() {
-    console.log("hi there !!!");
     updateAddress();
     if (page_address == "" || page_address == "home") {
       const dots = document.querySelectorAll(".interior .dot");
