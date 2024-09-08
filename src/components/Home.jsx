@@ -167,7 +167,7 @@ function Experiences() {
   let reviews_direction = 0;
 
   function reviewLeft() {
-    console.log("hi, there");
+    console.log(page_address);
     updateAddress();
     if (page_address == "" || page_address == "home") {
       const reviews = document.querySelector(".reviews");
@@ -181,7 +181,6 @@ function Experiences() {
         username.innerHTML = data[review_no][0];
         stringAnimate(data[review_no][1], string, reviews);
         img.src = data[review_no][2];
-        console.log("hi");
       }
     }
   }
@@ -263,12 +262,12 @@ function Experiences() {
     }, 3500);
   }
 
-  setTimeout(() => {
+  document.addEventListener("DOMContentLoaded", () => {
     const dots = document.querySelectorAll(".interior .dot");
     moveInterior(dots[0]);
     automoveInterior();
     automoveReviews();
-  }, 1000);
+  });
 
   return (
     <div className="experiences">
@@ -477,10 +476,10 @@ function Tests() {
     }
   }
 
-  setTimeout(() => {
+  document.addEventListener("DOMContentLoaded", () => {
     moveBox();
     setTimeout(autoMoveTreatments, 1000);
-  }, 1000);
+  });
 
   return (
     <div className="tests">
@@ -731,7 +730,9 @@ function Doctors() {
 
 function updateAddress() {
   page_address = window.location.href;
-  page_address = page_address.replace("http://localhost:3000/", "");
+  page_address = page_address
+    .replace("http://localhost:3000/", "")
+    .replace("https://www.naveenhfc.com/", "");
   page_address = page_address.replace(
     "https://naveen-superspeciality-hospital.vercel.app/",
     ""
