@@ -334,10 +334,12 @@ function Experiences() {
         <div className="content">
           <span>HOSPITAL COMPLIANT</span>
           <p>Ensuring safe, compliant care for all</p>
-          <button>
-            <i className="bx bx-right-arrow-alt"></i>
-            Learn More
-          </button>
+          <a href="#sterilization">
+            <button>
+              <i className="bx bx-right-arrow-alt"></i>
+              Learn More
+            </button>
+          </a>
         </div>
       </div>
     </div>
@@ -433,9 +435,11 @@ function OurServices() {
             Your beauty, perfected by the expertise of our world-class trained
             surgeon
           </span>
-          <button>
-            <i className="bx bx-right-arrow-alt"></i> Read More
-          </button>
+          <a href="/dentistry">
+            <button>
+              <i className="bx bx-right-arrow-alt"></i> Read More
+            </button>
+          </a>
         </div>
       </div>
     </div>
@@ -635,7 +639,7 @@ function Tests() {
 
 function Events() {
   return (
-    <div className="events">
+    <div className="events" id="sterilization">
       <div className="banner">
         <h2>Our Comprehensive Sterilization Process</h2>
         <p>
