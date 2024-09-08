@@ -238,6 +238,8 @@ function Experiences() {
     }
   }
 
+  console.log("its me");
+
   function automoveInterior() {
     console.log("hi there !!!");
     updateAddress();
