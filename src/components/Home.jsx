@@ -262,12 +262,12 @@ function Experiences() {
     }, 3500);
   }
 
-  document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
     const dots = document.querySelectorAll(".interior .dot");
     moveInterior(dots[0]);
     automoveInterior();
     automoveReviews();
-  });
+  }, 250);
 
   return (
     <div className="experiences">
@@ -476,10 +476,10 @@ function Tests() {
     }
   }
 
-  document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
     moveBox();
     setTimeout(autoMoveTreatments, 1000);
-  });
+  }, 250);
 
   return (
     <div className="tests">
