@@ -266,7 +266,7 @@ function Experiences() {
     moveInterior(dots[0]);
     automoveInterior();
     automoveReviews();
-  }, 500);
+  }, 1000);
 
   return (
     <div className="experiences">
@@ -478,7 +478,7 @@ function Tests() {
   setTimeout(() => {
     moveBox();
     setTimeout(autoMoveTreatments, 1000);
-  }, 500);
+  }, 1000);
 
   return (
     <div className="tests">
