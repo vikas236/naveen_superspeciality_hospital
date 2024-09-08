@@ -50,13 +50,13 @@ const Footer = () => {
             <a href="/Pay Your Bills">Pay Your Bills</a>
             <div className="social_media" target="_blank">
               <a href="https://www.instagram.com/naveen_hair_and_face_clinic?utm_source=qr">
-                <i class="bx bxl-instagram"></i>
+                <i className="bx bxl-instagram"></i>
               </a>
               <a
                 href="https://www.facebook.com/people/Naveen-Hair-and-Face-clinic/100083928652875/?mibextid=LQQJ4d&rdid=byLkgpyUHGhqGBZ3&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FCWiZrUZxrmjZFkFp%2F%3Fmibextid%3DLQQJ4d"
                 target="_blank"
               >
-                <i class="bx bxl-facebook-circle"></i>
+                <i className="bx bxl-facebook-circle"></i>
               </a>
             </div>
           </div>
