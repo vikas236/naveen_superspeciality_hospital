@@ -35,7 +35,7 @@ const Footer = () => {
           <div className="list">
             <a href="/Careers">Careers</a>
             <a href="/Education">Education</a>
-            <a href="/About Us">About Us</a>
+            <a href="/about">About Us</a>
             <a href="/Areas Of Care">Areas Of Care</a>
             <a href="/Volunteers">Volunteers</a>
           </div>
