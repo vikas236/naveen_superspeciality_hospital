@@ -1,4 +1,10 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React, { useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 import "./App.css";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
@@ -16,11 +22,33 @@ import FacialTrauma from "./components/FacialTrauma";
 import Tmj from "./components/Tmj";
 import Dentistry from "./components/Dentistry";
 import NotFound from "./components/NotFound";
+import Preloading from "./components/Preloading";
 
 function App() {
+  function RouteHandler() {
+    const location = useLocation();
+
+    useEffect(() => {
+      const preloading = document.querySelector(".preloading");
+      const body = document.querySelector("body");
+
+      preloading.classList.remove("inactive");
+      body.style.overflow = "hidden";
+
+      setTimeout(() => {
+        preloading.classList.add("inactive");
+        body.style.overflow = "scroll";
+      }, 1000);
+    }, [location]);
+
+    return;
+  }
+
   return (
     <Router>
       <Nav />
+      <Preloading />
+      <RouteHandler />
       <Routes>
         <Route exact path="/" Component={Home} />
         <Route exact path="/about" Component={About} />

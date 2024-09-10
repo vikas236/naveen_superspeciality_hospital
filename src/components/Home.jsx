@@ -167,7 +167,6 @@ function Experiences() {
   let reviews_direction = 0;
 
   function reviewLeft() {
-    console.log(page_address);
     updateAddress();
     if (page_address == "" || page_address == "home") {
       const reviews = document.querySelector(".reviews");

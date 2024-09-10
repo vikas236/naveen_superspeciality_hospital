@@ -8,11 +8,11 @@
   padding-bottom: 50px;
   margin: 0;
   gap: 50px;
+  overflow-x: hidden;
 }
 
 .treatments .banner_box {
   position: relative;
-  min-height: 375px;
   background: #2c3e50;
 }
 
@@ -222,12 +222,21 @@
     width: calc(100% - 50px);
     padding: 50px 0;
   }
+
+  .treatments > div:nth-child(odd):after {
+    width: 150vw;
+    left: -25px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
   .treatments > div {
     width: 970px;
     padding: 35px 0;
+  }
+
+  .treatments > div:nth-child(odd):after {
+    left: -100px;
   }
 }
 
@@ -240,6 +249,11 @@
     width: 692px;
     padding: 35px 0;
     flex-direction: column;
+  }
+
+  .treatments > div:nth-child(odd):after {
+    width: 150vw;
+    left: -125px;
   }
 
   .treatments > div .content,
@@ -306,6 +320,7 @@
 @media only screen and (max-width: 556px) {
   .treatments > div {
     width: calc(100vw - 20px);
+    padding-bottom: 35px;
   }
 
   .treatments .box {

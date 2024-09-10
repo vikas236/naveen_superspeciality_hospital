@@ -1,0 +1,52 @@
+.preloading {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  inset: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  z-index: 10;
+  transition: 0.5s;
+  overflow: hidden;
+  display: block;
+}
+
+.preloading.inactive {
+  display: none;
+}
+
+.preloading .loader {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  inset: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.preloading img {
+  width: 100%;
+  border-radius: 50px;
+  padding: 50px;
+  transition: 0.5s;
+  position: absolute;
+  inset: 0;
+}
+
+.preloading img.circle {
+  animation: rotate 21s linear infinite;
+}
+
+.preloading img.letter {
+  width: 80%;
+  left: 10%;
+  top: 17%;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
