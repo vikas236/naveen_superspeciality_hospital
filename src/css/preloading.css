@@ -50,3 +50,17 @@
     transform: rotate(360deg);
   }
 }
+
+@media only screen and (max-width: 753px) {
+  .preloading .loader {
+    width: 425px;
+    height: 425px;
+  }
+}
+
+@media only screen and (max-width: 553px) {
+  .preloading .loader {
+    width: 85vw;
+    height: 85vw;
+  }
+}
