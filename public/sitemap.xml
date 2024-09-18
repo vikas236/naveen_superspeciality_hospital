@@ -2,54 +2,80 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://naveenhfc.com/</loc>
+    <lastmod>2024-09-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://naveenhfc.com/about</loc>
+    <lastmod>2024-09-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://naveenhfc.com/contact</loc>
+    <lastmod>2024-09-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://naveenhfc.com/hairtransplantation</loc>
+    <lastmod>2024-09-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://naveenhfc.com/fuetransplant</loc>
+    <lastmod>2024-09-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://naveenhfc.com/nonsurgicalhair</loc>
+    <lastmod>2024-09-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://naveenhfc.com/malehairloss</loc>
+    <lastmod>2024-09-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://naveenhfc.com/femalehairloss</loc>
+    <lastmod>2024-09-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://naveenhfc.com/facialtrauma</loc>
+    <lastmod>2024-09-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://naveenhfc.com/tmjtreatment</loc>
+    <lastmod>2024-09-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://naveenhfc.com/dentistry</loc>
-    <priority>0.90</priority>
+    <lastmod>2024-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://naveenhfc.com/eyebrowhairloss</loc>
+    <lastmod>2024-09-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://naveenhfc.com/beardhairloss</loc>
+    <lastmod>2024-09-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
 </urlset>
