@@ -77,7 +77,7 @@ const About = () => {
           </h1>
           <p>
             Embrace a world of comprehensive healthcare where your well-being
-            takes center stage. At Naveen Super Speciality Hospital, we're
+            takes center stage. At naveenhfc (Naveen Super Speciality Hospital), we're
             dedicated to providing you with personalized and compassionate
             medical services.
           </p>
@@ -109,7 +109,7 @@ const About = () => {
             </li>
           </ul>
           <p>
-            At Naveen Super Speciality Hospital, we combine modern care with
+            At naveenhfc (Naveen Super Speciality Hospital), we combine modern care with
             compassion for a seamless, positive experience.
           </p>
         </div>

@@ -59,7 +59,7 @@ function Treatments() {
         <div className="content">
           <h1>Leading clinics providing</h1>
           <p>
-            Naveen Superspeciality Hospital is one of the leading clinics
+            naveenhfc (Naveen Superspeciality Hospital) is one of the leading clinics
             providing hair loss treatment in Ravulapalem. All you need to do is
             book an appointment for an initial consultation and get started with
             your personalised hair treatment plan.
@@ -100,7 +100,7 @@ function Treatments() {
           </ul>
           <p>
             Searching for <b>‘Hair loss treatment near me?’</b> At{" "}
-            <a href="/">Naveen Superspeciality Hospital</a>, you can consult
+            <a href="/">naveenhfc (Naveen Superspeciality Hospital)</a>, you can consult
             with our doctor to get an accurate estimate of the cost based on
             your individual needs.
           </p>
@@ -407,7 +407,7 @@ function Treatments() {
           <p>
             Need hair loss consultation? Get access to hair loss doctor who can
             evaluate and diagnose the underlying causes of hair loss only at
-            Naveen Superspeciality Hospital. We offer tailored treatment plans
+            naveenhfc (Naveen Superspeciality Hospital). We offer tailored treatment plans
             based on our evaluation. We work by simply considering the level of
             hair loss severity and trying to determine the underlying cause. By
             addressing the contributing factors, we then suggest a suitable
@@ -428,8 +428,8 @@ function Treatments() {
           <p>
             There is no ‘best’ technique for hair transplant Each person has
             their own individual requirements that will dictate which technique
-            is most appropriate for them specifically. At Naveen Superspeciality
-            Hospital, we are experts in all forms of hair restoration.
+            is most appropriate for them specifically. At naveenhfc (Naveen Superspeciality
+            Hospital), we are experts in all forms of hair restoration.
           </p>
           <button>Book A Consultation</button>
         </div>

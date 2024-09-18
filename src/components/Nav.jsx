@@ -32,7 +32,7 @@ function Nav0() {
       <img
         src={Logo}
         className="logo"
-        alt="naveen superspeciality hospital logo"
+        alt="naveenhfc naveen superspeciality hospital logo"
       />
     </div>
   );
@@ -44,7 +44,7 @@ function Nav1() {
       <div className="wrapper">
         <div className="left">
           <Link to="/" className="logo">
-            <img src={Logo} alt="naveen superspeciality hospital logo" />
+            <img src={Logo} alt="naveenhfc naveen superspeciality hospital logo" />
           </Link>
           <NavLinks />
         </div>

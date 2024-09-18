@@ -642,7 +642,7 @@ function Events() {
       <div className="banner">
         <h2>Our Comprehensive Sterilization Process</h2>
         <p>
-          At Naveen Superspeciality Dental, Hair, and Face Hospital, we are
+          At naveenhfc (Naveen Superspeciality Dental, Hair, and Face Hospital), we are
           committed to upholding the highest standards of healthcare excellence,
           ensuring full compliance with all industry regulations and best
           practices to provide safe and effective treatments to our patients.

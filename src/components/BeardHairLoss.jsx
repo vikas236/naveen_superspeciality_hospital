@@ -60,7 +60,7 @@ function BeardHairLoss() {
             choose to express your style with facial hair or not. The power is
             in being able to choose for yourself and this is where our friendly
             teams are ready to help you make that choice from an empowered point
-            of view! Naveen Superspeciality Hospital boast the best-available
+            of view! naveenhfc (Naveen Superspeciality Hospital) boast the best-available
             selection and range of state-of the-art treatments and options to
             get you started if you want to take advantage of the best ways to
             address Facial Hair Loss Treatment in your area.{" "}

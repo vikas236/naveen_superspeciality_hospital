@@ -52,8 +52,8 @@ function EyeBrowHairLoss() {
           <h1>Eyebrow Transplant</h1>
           <p>
             The eyebrows frame the face and can take years off your appearance
-            if crafted correctly! This is where our team at Naveen
-            Superspeciality Hospital are on-call to help you look and feel your
+            if crafted correctly! This is where our team at naveenhfc (Naveen
+            Superspeciality Hospital) are on-call to help you look and feel your
             best. The current buzzwords in the industry include Eyebrow
             Transplantation and this is part of the Eyebrow Hair Transplant
             techniques in which we excel!
@@ -64,7 +64,7 @@ function EyeBrowHairLoss() {
         <div className="content">
           <h1>Eyebrow Hair Transplant</h1>
           <p>
-            Naveen Superspeciality Hospital are able to create a wide-eyed, but
+            naveenhfc (Naveen Superspeciality Hospital) are able to create a wide-eyed, but
             natural, appearance for you, based on the way we perfect our eyebrow
             hair transplants. You can rest assured that our team are the
             industry’s best and we only use world-class techniques to create a
@@ -98,14 +98,14 @@ function EyeBrowHairLoss() {
           <p>
             {" "}
             On the other hand, many of our clients simply request an updated
-            eyebrow hair transplant because they love staying on-trend.{" "}
+            eyebrow hair transplant because they love staying on-trend.
           </p>
           <p>
             {" "}
             Imagine the convenience of not having to apply any eyebrow pencil
             every morning; it’s honestly a breeze and our testimonials prove
             that many of our clients appreciate the added fullness offered by
-            Naveen Superspeciality Hospital eyebrow treatments.{" "}
+            naveenhfc (Naveen Superspeciality Hospital) eyebrow treatments.
           </p>
         </div>
         <img src={procedure} alt="" />

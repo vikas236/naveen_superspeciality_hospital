@@ -54,7 +54,7 @@ const Footer = () => {
               </a>
               <a
                 href="https://www.facebook.com/people/Naveen-Hair-and-Face-clinic/100083928652875/?mibextid=LQQJ4d&rdid=byLkgpyUHGhqGBZ3&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FCWiZrUZxrmjZFkFp%2F%3Fmibextid%3DLQQJ4d"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 <i className="bx bxl-facebook-circle"></i>
               </a>
@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
       </div>
       <h1 className="disclaimer">
-        <b>© Naveen Hospital</b> All Rights Reserved by{" "}
+        <b>© naveenhfc</b> All Rights Reserved by{" "}
         <a href="https://www.pvgig.com/" target="_blank">
           pvgig
         </a>

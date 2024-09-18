@@ -20,7 +20,7 @@ function Fue() {
           <span className="sub_heading">FUE transplant</span>
           <h1>FUE</h1>
           <p>
-            At Naveen Superspeciality hospital, we understand that hair loss can
+            At naveenhfc (Naveen Superspeciality hospital), we understand that hair loss can
             impact your confidence. We use the latest techniques for FUE
             transplant to offer the best results. Follicular Unit Excision is
             also referred to as Follicular Unit Extraction and is a procedure
