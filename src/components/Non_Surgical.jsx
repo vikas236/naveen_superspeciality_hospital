@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import banner_img from "../images/treatments/banner_non_sugical.png";
 import medicine from "../images/treatments/medicine.png";
 import banner0 from "../images/treatments/banner0.jpg";
@@ -24,7 +25,6 @@ function NonSurgical() {
             invasive procedures that require the injection of growth factors
             into the scalp.
           </p>
-          <button>Book A Consultation</button>
         </div>
         <img src={medicine} alt="" className="medicine" />
       </div>

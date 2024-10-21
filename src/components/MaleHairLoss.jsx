@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import banner from "../images/treatments/banner1.png";
 import beforeafter from "../images/treatments/before_after1.jpeg";
 import procedure from "../images/treatments/procedure1.jpg";
@@ -57,8 +58,8 @@ function MaleHairLoss() {
             to? Let’s face it; an unflattering angle can be a little bit
             confronting! Plus, we are being photographed more now than at any
             other time in history. How can you stand out from the crowd (but for
-            all the right reasons?) Let our team at naveenhfc (Naveen Superspeciality
-            Hospital) handle it!
+            all the right reasons?) Let our team at naveenhfc (Naveen
+            Superspeciality Hospital) handle it!
           </p>
         </div>
       </div>
@@ -68,17 +69,17 @@ function MaleHairLoss() {
           <p>
             There currently exists a plethora of options in terms of selecting
             the right type of medication for what’s known as “Male Pattern
-            Baldness.” Our friendly team at naveenhfc (Naveen Superspeciality Hospital) can
-            help you work out which type of medication may suit you. Check in
-            with us and we can help you work out a plan that will also fit in
-            with your budget. On the other hand, upon consultation and further
-            consideration, we are also happy to suggest other treatments if we
-            find ourselves recommending that another option may be even more
-            effective. The current most-popular medications include various
-            brand-names however we want to go through the process of selection
-            with you, step-by-step, to make sure that any medication you may
-            wish to try is suitable for your needs. Call us today or drop us a
-            line for an obligation-free quote!
+            Baldness.” Our friendly team at naveenhfc (Naveen Superspeciality
+            Hospital) can help you work out which type of medication may suit
+            you. Check in with us and we can help you work out a plan that will
+            also fit in with your budget. On the other hand, upon consultation
+            and further consideration, we are also happy to suggest other
+            treatments if we find ourselves recommending that another option may
+            be even more effective. The current most-popular medications include
+            various brand-names however we want to go through the process of
+            selection with you, step-by-step, to make sure that any medication
+            you may wish to try is suitable for your needs. Call us today or
+            drop us a line for an obligation-free quote!
           </p>
         </div>
         <img src={procedure} alt="" />
@@ -92,12 +93,12 @@ function MaleHairLoss() {
             year that slips by, you may be noticing that your hair is thinning
             and showing that time is passing by, faster than ever! You might
             even experience premature hair-loss due to heredity and/or stress.
-            We’ve got you covered. naveenhfc (Naveen Superspeciality Hospital) are
-            ravulapalem's number-one clinic for professional treatment of hair
-            loss for men. We genuinely care about your hair-restoration journey,
-            and we made time for you to ask any questions as and when they
-            arise. naveenhfc (Naveen Superspeciality Hospital) are ready to chat with you
-            and we can’t wait to see you at our clinic.
+            We’ve got you covered. naveenhfc (Naveen Superspeciality Hospital)
+            are ravulapalem's number-one clinic for professional treatment of
+            hair loss for men. We genuinely care about your hair-restoration
+            journey, and we made time for you to ask any questions as and when
+            they arise. naveenhfc (Naveen Superspeciality Hospital) are ready to
+            chat with you and we can’t wait to see you at our clinic.
           </p>
         </div>
       </div>
@@ -111,8 +112,8 @@ function MaleHairLoss() {
             daily shaving is just another grooming-hassle that you don’t need!
             The feedback we receive from our delighted clientele is that their
             self-confidence dramatically improves after they complete their
-            hair-restoration experience with naveenhfc (Naveen Superspeciality Hospital).
-            Our teams are fully qualified and ready to listen to you.
+            hair-restoration experience with naveenhfc (Naveen Superspeciality
+            Hospital). Our teams are fully qualified and ready to listen to you.
           </p>
         </div>
         <img src={doctor} alt="" />

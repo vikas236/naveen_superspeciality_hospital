@@ -4,7 +4,7 @@ import string_shape from "../images/string_shape.png";
 import paper_clip from "../images/paper_clip.jpg";
 import hair from "../images/hair_follicle.svg";
 import hair0 from "../images/hair0.svg";
-import tooth from "../images/tooth.svg";
+import tmj_icon from "../images/tmj/tmj_icon.svg";
 import operating_doctor from "../images/operating_doctor.jpg";
 import arrow from "../images/arrow.svg";
 import male_doctor from "../images/male_doctor.jpg";
@@ -15,6 +15,8 @@ import certified1 from "../images/certified1.png";
 import certified2 from "../images/certified2.png";
 import certified3 from "../images/certified3.jpg";
 import smile from "../images/wide_smile.webp";
+import maxilla from "../images/tmj/maxilla.jpg";
+import jaw from "../images/tmj/jaw.jpg";
 import before_fue from "../images/before_fue_transplant_nobg.png";
 import after_fue from "../images/after_fue_transplant_nobg.png";
 import user_image from "../images/user.png";
@@ -35,6 +37,8 @@ import female_hair from "../images/home/types0.png";
 import male_hair from "../images/home/types1.png";
 
 let page_address;
+const serverUrl = "https://dr-naveen-server.vercel.app";
+// const serverUrl = "http://localhost:3001";
 
 const Home = () => {
   return (
@@ -53,6 +57,48 @@ const Home = () => {
 };
 
 function HeroSection() {
+  async function addGalleryImages() {
+    try {
+      // Send GET request to the /gallery endpoint
+      const response = await fetch(`${serverUrl}/gallery`);
+
+      // Check if the response is OK
+      if (!response.ok) {
+        throw new Error("Failed to fetch data");
+      }
+
+      // Parse the JSON response
+      const data = await response.json();
+
+      // Display the gallery
+      galleryRotation(data);
+    } catch (error) {
+      console.error("Error fetching gallery:", error);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", addGalleryImages);
+
+  function galleryRotation(arr) {
+    const galleryDiv = document.querySelector(".hero .box.d");
+
+    galleryDiv.childNodes[0].src = arr[0].image_data;
+    function showImage() {
+      const randomNumber = getRandomInt(0, arr.length - 1);
+      galleryDiv.childNodes[0].src = arr[randomNumber].image_data;
+    }
+
+    setInterval(() => {
+      showImage();
+    }, 12500);
+  }
+
+  function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
   return (
     <div className="hero">
       <div className="box a">
@@ -80,26 +126,34 @@ function HeroSection() {
         <img src={after_fue} alt="" />
       </div>
       <div className="box d">
-        <img src={smile} alt="" />
-        <h1>creating beautiful smiles everyday</h1>
-        <span>DR.Naveen's Dental Clinic</span>
+        <img src={jaw} alt="" />
       </div>
       <div className="box e">
         <div className="content">
           <p>
             Call for <b>Expert Hair Transplant Advice</b>
           </p>
-          <span>
-            <i className="bx bxs-phone-call"></i>
-            CALL: <a href="tel:9550937897">+91 95509 37897</a>
-          </span>
-          <p>
-            Call us for your dental care <b>at</b>
-          </p>
-          <span>
-            <i className="bx bxs-phone-call"></i>
-            CALL: <a href="tel:6309737897">+91 63097 37897</a>
-          </span>
+          <a href="tel:9550937897" rel="noreferrer" target="_blank">
+            <span>
+              <i className="bx bxs-phone-call"></i>
+              CALL: +91 95509 37897
+            </span>
+          </a>
+          <a
+            href="https://maps.app.goo.gl/yYvfk4CP2q6CH6bcA"
+            className="not_number"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <i className="bx bx-current-location"></i>
+            Visit: 5-4-76/6, gokhale street, College Rd, Amalapuram, Andhra
+            Pradesh 533201 (behind fashion factory)
+          </a>
+          <div className="hours">
+            <i className="bx bx-time-five"></i>
+            Hours: Mon - Sat, 10am - 8pm
+          </div>
+          <div className="hours">Hours: Sun, 10am - 2pm</div>
         </div>
       </div>
       <div className="box f">
@@ -168,7 +222,11 @@ function Experiences() {
 
   function reviewLeft() {
     updateAddress();
-    if (page_address == "" || page_address == "home") {
+    if (
+      page_address === "" ||
+      page_address === "home" ||
+      page_address === "#sterilization"
+    ) {
       const reviews = document.querySelector(".reviews");
 
       if (review_no < 3 && !reviews.classList.contains("loading")) {
@@ -186,7 +244,11 @@ function Experiences() {
 
   function reviewRight() {
     updateAddress();
-    if (page_address == "" || page_address == "home") {
+    if (
+      page_address === "" ||
+      page_address === "home" ||
+      page_address === "#sterilization"
+    ) {
       const reviews = document.querySelector(".reviews");
 
       if (review_no > 0 && !reviews.classList.contains("loading")) {
@@ -205,7 +267,11 @@ function Experiences() {
 
   function stringAnimate(string, container, parent) {
     updateAddress();
-    if (page_address == "" || page_address == "home") {
+    if (
+      page_address === "" ||
+      page_address === "home" ||
+      page_address === "#sterilization"
+    ) {
       parent.classList.add("loading");
       for (let i = 0; i <= string.length; i++) {
         setTimeout(() => {
@@ -220,7 +286,11 @@ function Experiences() {
 
   function moveInterior(dot) {
     updateAddress();
-    if (page_address == "" || page_address == "home") {
+    if (
+      page_address === "" ||
+      page_address === "home" ||
+      page_address === "#sterilization"
+    ) {
       const dots = document.querySelectorAll(".interior .dot");
       const container = document.querySelector(".interior .interior_wrapper");
 
@@ -239,7 +309,11 @@ function Experiences() {
 
   function automoveInterior() {
     updateAddress();
-    if (page_address == "" || page_address == "home") {
+    if (
+      page_address === "" ||
+      page_address === "home" ||
+      page_address === "#sterilization"
+    ) {
       const dots = document.querySelectorAll(".interior .dot");
 
       setTimeout(automoveInterior, 5500);
@@ -288,7 +362,7 @@ function Experiences() {
             </li>
             <li>
               <i className="bx bxs-badge-check"></i>certified cole instruments
-              (usa) usage
+              (USA) usage
             </li>
           </ul>
         </div>
@@ -428,13 +502,13 @@ function OurServices() {
           </a>
         </div>
         <div className="service">
-          <img src={tooth} alt="" />
-          <h2>Cosmetic Dentistry</h2>
+          <img src={tmj_icon} alt="" />
+          <h2>Maxillofacial Surgery and tmj</h2>
           <span>
-            Your beauty, perfected by the expertise of our world-class trained
-            surgeon
+            Restoring facial harmony and enhancing jaw function with dedicated
+            expert care
           </span>
-          <a href="/dentistry">
+          <a href="/facialtrauma">
             <button>
               <i className="bx bx-right-arrow-alt"></i> Read More
             </button>
@@ -450,7 +524,11 @@ function Tests() {
 
   function moveBox() {
     updateAddress();
-    if (page_address == "" || page_address == "home") {
+    if (
+      page_address === "" ||
+      page_address === "home" ||
+      page_address === "#sterilization"
+    ) {
       const dots = document.querySelectorAll(".tests .dot");
       const container = document.querySelector(".tests_slider .wrapper");
 
@@ -469,7 +547,11 @@ function Tests() {
 
   function autoMoveTreatments() {
     updateAddress();
-    if (page_address == "" || page_address == "home") {
+    if (
+      page_address === "" ||
+      page_address === "home" ||
+      page_address === "#sterilization"
+    ) {
       const dots = document.querySelectorAll(".tests .dot");
 
       setTimeout(autoMoveTreatments, 10500);
@@ -505,8 +587,8 @@ function Tests() {
         <h2>
           Elevate Your Confidence with{" "}
           <b>
-            Expert Cosmetic Surgery, Advanced Hair Restoration, and Precision
-            Dental Care
+            Expert Cosmetic Surgery, Advanced Hair Restoration, and
+            Maxillofacial Care
           </b>
         </h2>
         <div className="tests_slider">
@@ -577,6 +659,15 @@ function Tests() {
                   <i className="bx bx-right-arrow-alt"></i>
                   <span> laser hair design</span>
                 </li>
+              </ul>
+              <a href="/hairtransplantation">
+                <button>explore</button>
+              </a>
+            </div>
+            <div className="item">
+              <img src={arrow} alt="" className="arrow" />
+              <span>Maxillofacial Care</span>
+              <ul>
                 <li>
                   <i className="bx bx-right-arrow-alt"></i>
                   <span>asesthetic facial surgeries</span>
@@ -588,35 +679,6 @@ function Tests() {
                 <li>
                   <i className="bx bx-right-arrow-alt"></i>
                   <span>maxillofacial tumors</span>
-                </li>
-              </ul>
-              <a href="/hairtransplantation">
-                <button>explore</button>
-              </a>
-            </div>
-            <div className="item">
-              <img src={arrow} alt="" className="arrow" />
-              <span>Dentistry</span>
-              <ul>
-                <li>
-                  <i className="bx bx-right-arrow-alt"></i>
-                  <span>Teeth Whitening</span>
-                </li>
-                <li>
-                  <i className="bx bx-right-arrow-alt"></i>
-                  <span> Smile Designing</span>
-                </li>
-                <li>
-                  <i className="bx bx-right-arrow-alt"></i>
-                  <span> Teeth Cleansing</span>
-                </li>
-                <li>
-                  <i className="bx bx-right-arrow-alt"></i>
-                  <span> Orthopedic Treatment </span>
-                </li>
-                <li>
-                  <i className="bx bx-right-arrow-alt"></i>
-                  <span>Dental Implants</span>
                 </li>
               </ul>
               <a href="/dentistry">
@@ -642,10 +704,11 @@ function Events() {
       <div className="banner">
         <h2>Our Comprehensive Sterilization Process</h2>
         <p>
-          At naveenhfc (Naveen Superspeciality Dental, Hair, and Face Hospital), we are
-          committed to upholding the highest standards of healthcare excellence,
-          ensuring full compliance with all industry regulations and best
-          practices to provide safe and effective treatments to our patients.
+          At naveenhfc (Naveen Superspeciality Dental, Hair, and Face Hospital),
+          we are committed to upholding the highest standards of healthcare
+          excellence, ensuring full compliance with all industry regulations and
+          best practices to provide safe and effective treatments to our
+          patients.
         </p>
         <hr />
         <div className="steps">
@@ -708,17 +771,6 @@ function Doctors() {
             <span className="designation">Hair Transplant Surgeon</span>
             <span className="designation">Facial Trauma Surgeon</span>
             <a href="tel: +91 9550937897">
-              <button>
-                <i className="bx bx-right-arrow-alt"></i>
-                Book An Appointment
-              </button>
-            </a>
-          </div>
-          <div className="doctor">
-            <img src={female_doctor} alt="" />
-            <span className="name">Dr.Gandham Sruthi</span>
-            <span className="designation">Dentist</span>
-            <a href="tel: +91 6309737897">
               <button>
                 <i className="bx bx-right-arrow-alt"></i>
                 Book An Appointment

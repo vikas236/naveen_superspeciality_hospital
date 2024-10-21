@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import banner from "../images/treatments/banner3.png";
 import beforeafter from "../images/treatments/before_after.png";
 import hair from "../images/treatments/hair3.jpg";
@@ -20,18 +21,18 @@ function Fue() {
           <span className="sub_heading">FUE transplant</span>
           <h1>FUE</h1>
           <p>
-            At naveenhfc (Naveen Superspeciality hospital), we understand that hair loss can
-            impact your confidence. We use the latest techniques for FUE
-            transplant to offer the best results. Follicular Unit Excision is
-            also referred to as Follicular Unit Extraction and is a procedure
-            that involves the extraction of follicles in their natural groupings
-            from areas of dense growth. This is usually from the side or back of
-            the head. The procedure involves small punches through which the
-            individual hair follicles are removed. The follicles are then
-            harvested and prepared to be placed in the donor area. The grafts
-            consist of 1, 2 or 3 hairs that are transplanted in a way so that
-            the natural look is maintained. If you are keen to find out more
-            about FUE hair transplant, book an appointment with us to learn
+            At naveenhfc (Naveen Superspeciality hospital), we understand that
+            hair loss can impact your confidence. We use the latest techniques
+            for FUE transplant to offer the best results. Follicular Unit
+            Excision is also referred to as Follicular Unit Extraction and is a
+            procedure that involves the extraction of follicles in their natural
+            groupings from areas of dense growth. This is usually from the side
+            or back of the head. The procedure involves small punches through
+            which the individual hair follicles are removed. The follicles are
+            then harvested and prepared to be placed in the donor area. The
+            grafts consist of 1, 2 or 3 hairs that are transplanted in a way so
+            that the natural look is maintained. If you are keen to find out
+            more about FUE hair transplant, book an appointment with us to learn
             more.
           </p>
         </div>

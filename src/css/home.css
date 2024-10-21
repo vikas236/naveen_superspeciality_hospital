@@ -177,20 +177,21 @@
 
 .hero .box.d {
   background: #97b1ab;
+  background: white;
   grid-column: 1 / 3;
   grid-row: 10 / 24;
   flex-direction: column;
-  padding: 35px;
+  /* padding: 7px; */
   justify-content: space-between;
   overflow: hidden;
+  /* border: 1px solid rgba(0, 0, 0, 0.24); */
 }
 
 .hero .box.d img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 50%;
-  background: #daeaeb;
+  /* background: #daeaeb; */
 }
 
 .hero .box.d h1 {
@@ -259,9 +260,14 @@
   border-radius: 50%;
   cursor: pointer;
   margin-right: 15px;
+  transition: 0.5s;
 }
 
-.hero .box.e span a {
+.hero .box.e span:hover i {
+  background: #2865be;
+}
+
+.hero .box.e a {
   letter-spacing: 2px;
   margin-left: 3px;
   text-decoration: none;
@@ -269,6 +275,38 @@
   font-weight: 800;
   padding-left: 2px;
   color: #51aaa2;
+  text-align: center;
+}
+
+.hero .box.e a.not_number {
+  font-size: 16px;
+  letter-spacing: normal;
+  margin-top: 25px;
+  margin-bottom: 11px;
+  color: rgba(0, 0, 0, 0.44);
+  transition: 0.5s;
+}
+
+.hero .box.e a.not_number:hover {
+  color: #51aaa2;
+}
+
+.hero .box.e a.not_number i {
+  margin-right: 4px;
+  font-size: 20px;
+}
+
+.hero .box.e .hours {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 3px;
+  color: rgba(0, 0, 0, 0.44);
+}
+
+.hero .box.e .hours i {
+  color: rgba(0, 0, 0, 0.64);
+  margin-right: 3px;
 }
 
 .hero .box.f {
@@ -1026,10 +1064,11 @@
 
 .tests .tests_slider .item {
   width: 100%;
+  height: 100%;
   background: white;
   display: flex;
   flex-direction: column;
-  padding: 75px 65px;
+  padding: 3% 2%;
   position: relative;
 }
 
@@ -1071,9 +1110,9 @@
   padding-left: 5px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   row-gap: 2px;
   padding-top: 15px;
+  overflow-y: scroll;
 }
 
 .tests .tests_slider ul li {
@@ -1275,6 +1314,7 @@
   height: 375 px;
   margin-top: 45px;
   display: flex;
+  justify-content: center;
   gap: 50px;
 }
 
@@ -1542,7 +1582,7 @@ a {
   }
 
   .tests .tests_slider .item {
-    height: fit-content;
+    min-height: fit-content;
     padding: 35px 30px;
   }
 
@@ -1750,6 +1790,10 @@ a {
 
   .tests .tests_slider .item {
     height: 100%;
+  }
+
+  .tests .doctor .doctor_award > i:last-of-type {
+    display: none;
   }
 
   .events {

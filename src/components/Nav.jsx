@@ -29,11 +29,13 @@ function Nav() {
 function Nav0() {
   return (
     <div className="nav0">
-      <img
-        src={Logo}
-        className="logo"
-        alt="naveenhfc naveen superspeciality hospital logo"
-      />
+      <a href="/">
+        <img
+          src={Logo}
+          className="logo"
+          alt="naveenhfc naveen superspeciality hospital logo"
+        />
+      </a>
     </div>
   );
 }
@@ -44,7 +46,10 @@ function Nav1() {
       <div className="wrapper">
         <div className="left">
           <Link to="/" className="logo">
-            <img src={Logo} alt="naveenhfc naveen superspeciality hospital logo" />
+            <img
+              src={Logo}
+              alt="naveenhfc naveen superspeciality hospital logo"
+            />
           </Link>
           <NavLinks />
         </div>
@@ -64,21 +69,9 @@ function NavLinks() {
         </Link>
       </li>
       <li>
-        <Link to="/about" className="link">
-          <i className="bx bx-info-circle"></i>
-          About
-        </Link>
-      </li>
-      <li>
-        <Link to="/contact" className="link">
-          <i className="bx bxs-contact"></i>
-          Contact
-        </Link>
-      </li>
-      <li>
         <Link to="/hairtransplantation" className="link">
           <i className="bx bxs-notepad"></i>
-          Hair Transplantation
+          Hair Treatments
         </Link>
       </li>
       <li>
@@ -118,12 +111,6 @@ function NavLinks() {
         </Link>
       </li>
       <li>
-        <Link to="/dentistry" className="link">
-          <img src={tooth_icon} alt="" />
-          Dental
-        </Link>
-      </li>
-      <li>
         <Link to="/eyebrowhairloss" className="link">
           <i className="bx bxs-notepad"></i>
           EyeBrow Hair Loss
@@ -133,6 +120,18 @@ function NavLinks() {
         <Link to="/beardhairloss" className="link">
           <i className="bx bxs-notepad"></i>
           Beard Hair Loss
+        </Link>
+      </li>
+      <li>
+        <Link to="/about" className="link">
+          <i className="bx bx-info-circle"></i>
+          About
+        </Link>
+      </li>
+      <li>
+        <Link to="/contact" className="link">
+          <i className="bx bxs-contact"></i>
+          Contact
         </Link>
       </li>
     </ul>

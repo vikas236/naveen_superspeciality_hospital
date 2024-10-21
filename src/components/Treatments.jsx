@@ -1,5 +1,4 @@
 import "../css/treatments.css";
-
 import banner from "../images/treatments/banner1.png";
 import hair from "../images/treatments/hair.jpg";
 import hair0 from "../images/treatments/hair0.jpg";
@@ -9,13 +8,14 @@ import consultation from "../images/treatments/consultation.jpg";
 import hair2 from "../images/treatments/hair2.png";
 import hair3 from "../images/treatments/hair3.jpg";
 import hair4 from "../images/treatments/hair4.jpg";
+import { Link } from "react-router-dom";
 
 function Treatments() {
   return (
     <div className="treatments">
       <div className="banner_box">
         <img src={banner} alt="" className="banner" />
-        <h1>Hair Transplant Procedure</h1>
+        <h1>Hair Treatments</h1>
       </div>
       <div>
         <div className="content">
@@ -59,17 +59,16 @@ function Treatments() {
         <div className="content">
           <h1>Leading clinics providing</h1>
           <p>
-            naveenhfc (Naveen Superspeciality Hospital) is one of the leading clinics
-            providing hair loss treatment in Ravulapalem. All you need to do is
-            book an appointment for an initial consultation and get started with
-            your personalised hair treatment plan.
+            naveenhfc (Naveen Superspeciality Hospital) is one of the leading
+            clinics providing hair loss treatment in Ravulapalem. All you need
+            to do is book an appointment for an initial consultation and get
+            started with your personalised hair treatment plan.
           </p>
           <p>
             By selecting our hair loss treatment clinic, you gain access to
             numerous advantages that make us a trusted choice for your hair
             restoration journey.
           </p>
-          <button>Book A Consultation</button>
         </div>
       </div>
       <div>
@@ -100,9 +99,9 @@ function Treatments() {
           </ul>
           <p>
             Searching for <b>‘Hair loss treatment near me?’</b> At{" "}
-            <a href="/">naveenhfc (Naveen Superspeciality Hospital)</a>, you can consult
-            with our doctor to get an accurate estimate of the cost based on
-            your individual needs.
+            <a href="/">naveenhfc (Naveen Superspeciality Hospital)</a>, you can
+            consult with our doctor to get an accurate estimate of the cost
+            based on your individual needs.
           </p>
           <p>
             Medications like minoxidil or DHT Blocker may have ongoing expenses
@@ -143,7 +142,6 @@ function Treatments() {
             team provides ongoing support, addressing any concerns you may have
             and ensuring your satisfaction with the results achieved.
           </p>
-          <button>Book A Consultation</button>
         </div>
       </div>
       <div>
@@ -182,7 +180,6 @@ function Treatments() {
             Consult with our hair loss doctor to determine the cause of hair
             loss and explore suitable treatment options.
           </p>
-          <button>Book A Consultation</button>
         </div>
         <img src={hair1} alt="" />
       </div>
@@ -321,7 +318,6 @@ function Treatments() {
             the back and sides of your head, you should consider going for a
             <b>hair loss treatment</b>.
           </p>
-          <button>Book A Consultation</button>
         </div>
         <img src={hair_stages} alt="" />
       </div>
@@ -407,17 +403,16 @@ function Treatments() {
           <p>
             Need hair loss consultation? Get access to hair loss doctor who can
             evaluate and diagnose the underlying causes of hair loss only at
-            naveenhfc (Naveen Superspeciality Hospital). We offer tailored treatment plans
-            based on our evaluation. We work by simply considering the level of
-            hair loss severity and trying to determine the underlying cause. By
-            addressing the contributing factors, we then suggest a suitable
-            treatment plan.
+            naveenhfc (Naveen Superspeciality Hospital). We offer tailored
+            treatment plans based on our evaluation. We work by simply
+            considering the level of hair loss severity and trying to determine
+            the underlying cause. By addressing the contributing factors, we
+            then suggest a suitable treatment plan.
           </p>
           <p>
             Benefit from our free consultation and get personalised treatment
             plans and professional guidance for addressing hair loss.
           </p>
-          <button>Book A Consultation</button>
         </div>
         <img src={consultation} alt="" />
       </div>
@@ -428,10 +423,10 @@ function Treatments() {
           <p>
             There is no ‘best’ technique for hair transplant Each person has
             their own individual requirements that will dictate which technique
-            is most appropriate for them specifically. At naveenhfc (Naveen Superspeciality
-            Hospital), we are experts in all forms of hair restoration.
+            is most appropriate for them specifically. At naveenhfc (Naveen
+            Superspeciality Hospital), we are experts in all forms of hair
+            restoration.
           </p>
-          <button>Book A Consultation</button>
         </div>
         <img src={hair} alt="" />
       </div>

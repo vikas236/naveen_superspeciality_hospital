@@ -23,6 +23,8 @@ import Tmj from "./components/Tmj";
 import Dentistry from "./components/Dentistry";
 import NotFound from "./components/NotFound";
 import Preloading from "./components/Preloading";
+import gallery from "./components/Gallery.jsx";
+import admin from "./components/Admin.jsx";
 
 function App() {
   function RouteHandler() {
@@ -63,6 +65,8 @@ function App() {
         <Route exact path="/facialtrauma" Component={FacialTrauma} />
         <Route exact path="/tmjtreatment" Component={Tmj} />
         <Route exact path="/dentistry" Component={Dentistry} />
+        <Route exact path="/gallery" Component={gallery} />
+        <Route exact path="/admin" Component={admin} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

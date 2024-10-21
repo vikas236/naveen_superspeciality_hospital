@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import banner from "../images/treatments/banner2.png";
 import procedure from "../images/treatments/procedure3.jpg";
 import pattern from "../images/treatments/pattern0.webp";
@@ -134,10 +135,10 @@ function FemaleHairLoss() {
           <p>
             We listen to your concerns about how lifestyle, stress, even the
             environment plus normal hormonal changes over the lifespan can
-            deeply impact your hair. This is where our friendly team at naveenhfc (Naveen
-            Superspeciality Hospital) are ready to step in and help maximise your
-            hair’s potential! Why wait? Pick up the phone or drop us a line. We
-            can’t wait to hear from you!
+            deeply impact your hair. This is where our friendly team at
+            naveenhfc (Naveen Superspeciality Hospital) are ready to step in and
+            help maximise your hair’s potential! Why wait? Pick up the phone or
+            drop us a line. We can’t wait to hear from you!
           </p>
         </div>
         <img src={hair} alt="" />
@@ -153,18 +154,18 @@ function FemaleHairLoss() {
           <p>
             Trichologists are working daily to devise new ways to treat women’s
             hair loss. We are across the latest in industry best-practices and
-            our professional advice is second-to-none. This is why naveenhfc (Naveen
-            Superspeciality Hospital) are your one-stop-shop for treating women’s
-            hair loss. Our experienced and friendly team are also discreet; we
-            respect your privacy and we understand that this can be an
-            experience requiring a gentle approach.
+            our professional advice is second-to-none. This is why naveenhfc
+            (Naveen Superspeciality Hospital) are your one-stop-shop for
+            treating women’s hair loss. Our experienced and friendly team are
+            also discreet; we respect your privacy and we understand that this
+            can be an experience requiring a gentle approach.
           </p>
           <p>
             This is why our reputation is growing so quickly as being the
             best-of-the-best; we genuinely care about how you feel, every step
             of the way, plus, we focus on results! You will feel immediately at
-            ease in our presence so make an appointment and find out why naveenhfc (Naveen
-            Superspeciality Hospital) is the industry-leader!
+            ease in our presence so make an appointment and find out why
+            naveenhfc (Naveen Superspeciality Hospital) is the industry-leader!
           </p>
         </div>
       </div>
