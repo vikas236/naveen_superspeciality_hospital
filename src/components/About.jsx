@@ -34,11 +34,6 @@ const About = () => {
               <i className="bx bx-phone-call"></i>
               HAIR: <span>+91 95509 37897</span>
             </a>
-
-            <a href="tel: 9550937897" className="call">
-              <i className="bx bx-phone-call"></i>
-              DENTAL: <span>+91 63097 37897</span>
-            </a>
           </div>
         </div>
       </div>
@@ -77,8 +72,8 @@ const About = () => {
           </h1>
           <p>
             Embrace a world of comprehensive healthcare where your well-being
-            takes center stage. At naveenhfc (Naveen Super Speciality Hospital), we're
-            dedicated to providing you with personalized and compassionate
+            takes center stage. At naveenhfc (Naveen Super Speciality Hospital),
+            we're dedicated to providing you with personalized and compassionate
             medical services.
           </p>
           <ul>
@@ -109,8 +104,8 @@ const About = () => {
             </li>
           </ul>
           <p>
-            At naveenhfc (Naveen Super Speciality Hospital), we combine modern care with
-            compassion for a seamless, positive experience.
+            At naveenhfc (Naveen Super Speciality Hospital), we combine modern
+            care with compassion for a seamless, positive experience.
           </p>
         </div>
       </div>

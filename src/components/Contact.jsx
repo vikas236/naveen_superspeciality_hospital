@@ -32,11 +32,6 @@ function Banner() {
             <i className="bx bx-phone-call"></i>
             HAIR: <span>+91 95509 37897</span>
           </a>
-
-          <a href="tel: 9550937897" className="call">
-            <i className="bx bx-phone-call"></i>
-            DENTAL: <span>+91 63097 37897</span>
-          </a>
         </div>
       </div>
     </div>
