@@ -5,6 +5,7 @@ const serverUrl = "https://dr-naveen-server.vercel.app";
 
 function gallery() {
   async function addGalleryImages() {
+    console.log("hi");
     try {
       // Send GET request to the /gallery endpoint
       const response = await fetch(`${serverUrl}/gallery`);
@@ -22,9 +23,7 @@ function gallery() {
     }
   }
 
-  setTimeout(() => {
-    addGalleryImages();
-  }, 250);
+  addGalleryImages();
 
   function showImages(data) {
     const gallery = document.querySelector(".main_gallery .gallery_images");
