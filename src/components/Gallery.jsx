@@ -22,7 +22,9 @@ function gallery() {
     }
   }
 
-  document.addEventListener("DOMContentLoaded", addGalleryImages);
+  setTimeout(() => {
+    addGalleryImages();
+  }, 250);
 
   function showImages(data) {
     const gallery = document.querySelector(".main_gallery .gallery_images");
