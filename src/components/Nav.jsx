@@ -134,6 +134,12 @@ function NavLinks() {
           Contact
         </Link>
       </li>
+      <li>
+        <Link to="/gallery" className="link">
+          <i className="bx bxs-contact"></i>
+          Gallery
+        </Link>
+      </li>
     </ul>
   );
 }
