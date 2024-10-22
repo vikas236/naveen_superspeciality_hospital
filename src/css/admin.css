@@ -24,6 +24,8 @@
 .admin .gallery_images {
   width: calc(100vw - 200px);
   padding: 25px 0;
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
   display: flex;
   gap: 35px;
   row-gap: 50px;
@@ -54,4 +56,60 @@
 }
 
 @media only screen and (max-width: 1350px) {
+  .admin .gallery_images {
+    width: 100vw;
+    padding: 0 25px;
+  }
+
+  .admin .gallery_images .image {
+    width: calc(33% - 27px);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .admin .gallery_images {
+    width: 970px;
+    padding: 0;
+  }
+
+  .admin .gallery_images .image {
+    width: calc(50% - 27px);
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .admin .gallery_images {
+    width: 693px;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 753px) {
+  .admin .gallery_images {
+    width: 532px;
+    padding: 0;
+    row-gap: 25px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .admin .gallery_images .image {
+    width: 532px;
+  }
+
+  .admin .gallery_images .image button {
+    inset: 25px 35px;
+  }
+}
+
+@media only screen and (max-width: 753px) {
+  .admin .gallery_images {
+    width: 100vw;
+    padding: 0 12px;
+  }
+
+  .admin .gallery_images .image {
+    width: 100vw;
+    padding: 0 12px;
+  }
 }
