@@ -3,7 +3,7 @@ import banner_img from "../images/about/about_banner.jpg";
 import doctor1 from "../images/about/doctor1.jpg";
 import box_corner from "../images/about/box_corner.png";
 import interior0 from "../images/doctors_door.jpeg";
-import interior1 from "../images/dentistry_and_corridor.jpg";
+import interior1 from "../images/op_room.jpg";
 import doctor from "../images/about/staff.jpeg";
 
 const About = () => {

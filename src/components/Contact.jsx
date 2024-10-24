@@ -24,13 +24,16 @@ function Banner() {
         <div className="left">
           <h1>Contact Us</h1>
           <span>
-            <b>Home</b> &gt; Contact Us
+            <b>
+              <a href="/">Home</a>
+            </b>{" "}
+            &gt; Contact Us
           </span>
         </div>
         <div className="right">
           <a href="tel: 9550937897" className="call">
             <i className="bx bx-phone-call"></i>
-            HAIR: <span>+91 95509 37897</span>
+            CALL: <span>+91 95509 37897</span>
           </a>
         </div>
       </div>
@@ -58,7 +61,6 @@ function Features() {
         <span>
           CALL:
           <a href="tel: +91 9550937897">+91 95509 37897</a>
-          <a href="tel: +91 63097 37897">+91 63097 37897</a>
         </span>
       </div>
       <div className="feature c">
