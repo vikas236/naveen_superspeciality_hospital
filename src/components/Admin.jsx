@@ -116,6 +116,9 @@ function admin() {
   }
 
   document.addEventListener("DOMContentLoaded", addImages);
+  setTimeout(() => {
+    addImages();
+  }, 250);
 
   return (
     <div className="admin">
