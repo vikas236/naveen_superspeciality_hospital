@@ -95,13 +95,18 @@ function gallery() {
 
   function showImageSlider(url, i) {
     const slider = document.querySelector(".gallery_slider");
+
+    document.body.style.overflow = "hidden";
     slider.classList.add("active");
+
     slider.childNodes[3].src = url;
     slide_number = i + 1;
   }
 
   function closeSlider() {
     const slider = document.querySelector(".main_gallery .gallery_slider");
+
+    document.body.style.overflow = "auto";
     slider.classList.remove("active");
   }
 
