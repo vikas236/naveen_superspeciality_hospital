@@ -91,6 +91,7 @@
   font-size: 100px;
   transform: translate(-50%, 0);
   border-radius: 50%;
+  color: rgba(0, 0, 0, 0.18);
 }
 
 .main_gallery .gallery_slider .close_btn:active {
