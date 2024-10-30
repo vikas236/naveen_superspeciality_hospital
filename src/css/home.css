@@ -2015,6 +2015,7 @@ a {
   .hero .box.c {
     width: 90%;
     height: fit-content;
+    overflow: hidden;
   }
 
   .hero .box.d {

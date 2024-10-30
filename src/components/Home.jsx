@@ -24,8 +24,8 @@ import user_image0 from "../images/user0.png";
 import user_image1 from "../images/user1.png";
 import user_image2 from "../images/user2.png";
 import interior from "../images/operating_room.jpg";
-import interior0 from "../images/dentistry.jpg";
-import interior1 from "../images/dentistry_and_corridor.jpg";
+import interior0 from "../images/home/interior0.jpg";
+import interior1 from "../images/home/interior1.jpg";
 import letter_n from "../images/letter_n.jpg";
 import n_circle from "../images/n_circle.png";
 import step_1 from "../images/sterilization/step_1.png";
@@ -195,11 +195,6 @@ function Message0() {
 function Experiences() {
   const data = [
     [
-      "Venu madhav Sayani",
-      "The best hair transplant clinic in amalapuram with economical prices",
-      user_image2,
-    ],
-    [
       "santosh kumar",
       "The over all experience is good, the staff are polite and treatment is affordable",
       user_image,
@@ -229,7 +224,7 @@ function Experiences() {
     ) {
       const reviews = document.querySelector(".reviews");
 
-      if (review_no < 3 && !reviews.classList.contains("loading")) {
+      if (review_no < 1 && !reviews.classList.contains("loading")) {
         review_no++;
         const username = document.querySelector(".reviews .username");
         const string = document.querySelector(".reviews .r p");
@@ -328,10 +323,10 @@ function Experiences() {
   function automoveReviews() {
     setTimeout(automoveReviews, 7000);
     setTimeout(() => {
-      if (review_no < 3 && reviews_direction === 0) reviewLeft();
+      if (review_no < 2 && reviews_direction === 0) reviewLeft();
       else if (review_no > 0 && reviews_direction === 1) reviewRight();
       else if (review_no === 0) reviews_direction = 0;
-      else if (review_no === 3) reviews_direction = 1;
+      else if (review_no === 2) reviews_direction = 1;
     }, 3500);
   }
 
