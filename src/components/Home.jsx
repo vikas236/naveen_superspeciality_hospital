@@ -17,6 +17,7 @@ import certified3 from "../images/certified3.jpg";
 // import smile from "../images/wide_smile.webp";
 // import maxilla from "../images/tmj/maxilla.jpg";
 // import jaw from "../images/tmj/jaw.jpg";
+import grey from "../images/home/greyish.jpg";
 import before_fue from "../images/before_fue_transplant_nobg.png";
 import after_fue from "../images/after_fue_transplant_nobg.png";
 import user_image from "../images/user.png";
@@ -126,7 +127,7 @@ function HeroSection() {
         <img src={after_fue} alt="" />
       </div>
       <div className="box d">
-        <img src="" alt="" />
+        <img src={grey} alt="" />
       </div>
       <div className="box e">
         <div className="content">

@@ -21,50 +21,18 @@ const Footer = () => {
           </span>
         </div>
         <div className="column">
-          <h1>Community</h1>
-          <div className="list">
-            <a href="/Doctors">Doctors</a>
-            <a href="/Testimonials">Testimonials</a>
-            <a href="/FAQs">FAQs</a>
-            <a href="/Blog">Blog</a>
-            <a href="/Site Map">Site Map</a>
-          </div>
-        </div>
-        <div className="column">
-          <h1>About</h1>
-          <div className="list">
-            <a href="/Careers">Careers</a>
-            <a href="/Education">Education</a>
-            <a href="/about">About Us</a>
-            <a href="/Areas Of Care">Areas Of Care</a>
-            <a href="/Volunteers">Volunteers</a>
-          </div>
-        </div>
-        <div className="column">
-          <h1>Support</h1>
-          <div className="list">
-            {/* <a href="/Visitor Information">Visitor Information</a>
-            <a href="/Emergency Care">Emergency Care</a> */}
-            <a href="/Donate">Donate</a>
-            <a href="/Online Services">Online Services</a>
-            <a href="/Pay Your Bills">Pay Your Bills</a>
-            <div className="social_media" target="_blank">
-              <a href="https://www.instagram.com/naveen_hair_and_face_clinic?utm_source=qr">
-                <i className="bx bxl-instagram"></i>
-              </a>
-              <a
-                href="https://www.facebook.com/people/Naveen-Hair-and-Face-clinic/100083928652875/?mibextid=LQQJ4d&rdid=byLkgpyUHGhqGBZ3&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FCWiZrUZxrmjZFkFp%2F%3Fmibextid%3DLQQJ4d"
-                target="_blank" rel="noreferrer"
-              >
-                <i className="bx bxl-facebook-circle"></i>
-              </a>
-            </div>
-          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15296.42082934366!2d82.0018924!3d16.5712112!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37ef1a23b294a1%3A0xec1323a664b6c351!2sNaveen%20Superspeciality%20Dental%2C%20Hair%20and%20Face%20Hospital!5e0!3m2!1sen!2sin!4v1730361298191!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="naveen hfc map"
+          ></iframe>
         </div>
       </div>
       <h1 className="disclaimer">
         <b>© naveenhfc</b> All Rights Reserved by{" "}
-        <a href="https://www.pvgig.com/" target="_blank">
+        <a href="https://www.pvgig.com/" target="_blank" rel="noreferrer">
           pvgig
         </a>
       </h1>
