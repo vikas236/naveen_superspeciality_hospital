@@ -2231,6 +2231,8 @@ a {
 
   .hero .box.c img {
     width: 100%;
+    padding: 15%;
+    padding-bottom: 0;
   }
 
   .hero .box.e {
