@@ -8,15 +8,15 @@ import tmj_icon from "../images/tmj/tmj_icon.svg";
 import operating_doctor from "../images/operating_doctor.jpg";
 import arrow from "../images/arrow.svg";
 import male_doctor from "../images/male_doctor.jpg";
-import female_doctor from "../images/female_doctor.jpg";
+// import female_doctor from "../images/female_doctor.jpg";
 import certified from "../images/certified.png";
 import certified0 from "../images/certified0.jpg";
 import certified1 from "../images/certified1.png";
 import certified2 from "../images/certified2.png";
 import certified3 from "../images/certified3.jpg";
-import smile from "../images/wide_smile.webp";
-import maxilla from "../images/tmj/maxilla.jpg";
-import jaw from "../images/tmj/jaw.jpg";
+// import smile from "../images/wide_smile.webp";
+// import maxilla from "../images/tmj/maxilla.jpg";
+// import jaw from "../images/tmj/jaw.jpg";
 import before_fue from "../images/before_fue_transplant_nobg.png";
 import after_fue from "../images/after_fue_transplant_nobg.png";
 import user_image from "../images/user.png";
@@ -126,7 +126,7 @@ function HeroSection() {
         <img src={after_fue} alt="" />
       </div>
       <div className="box d">
-        <img src={jaw} alt="" />
+        <img src="" alt="" />
       </div>
       <div className="box e">
         <div className="content">
