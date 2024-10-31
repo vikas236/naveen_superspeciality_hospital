@@ -2225,11 +2225,12 @@ a {
 
   .hero .box.c {
     width: 100%;
-    height: 425px;
+    height: fit-content;
+    flex-direction: column;
   }
 
   .hero .box.c img {
-    width: 80%;
+    width: 100%;
   }
 
   .hero .box.e {
