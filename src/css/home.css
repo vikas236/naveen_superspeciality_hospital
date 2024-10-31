@@ -1869,6 +1869,8 @@ a {
   .hero .box.c img {
     width: 50%;
     height: fit-content;
+    padding: 7%;
+    padding-bottom: 0;
   }
 
   .hero .box.d {
