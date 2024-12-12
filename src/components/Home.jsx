@@ -313,11 +313,8 @@ function Experiences() {
       const dots = document.querySelectorAll(".interior .dot");
 
       setTimeout(automoveInterior, 5500);
-      if (image_no < 2 && gallery_direction === 0) dots[++image_no].click();
-      else if (image_no > 0 && gallery_direction === 1)
-        dots[--image_no].click();
-      else if (image_no === 0) gallery_direction = 0;
-      else if (image_no === 2) gallery_direction = 1;
+      if (image_no == 1) dots[0].click();
+      else dots[1].click();
     }
   }
 
@@ -385,7 +382,7 @@ function Experiences() {
         <div className="interior">
           <div className="interior_wrapper">
             <img src={interior} alt="" />
-            <img src={interior0} alt="" />
+{/*             <img src={interior0} alt="" /> */}
             <img src={interior1} alt="" />
           </div>
           <div className="dots">
