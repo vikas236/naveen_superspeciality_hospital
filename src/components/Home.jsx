@@ -388,7 +388,6 @@ function Experiences() {
           <div className="dots">
             <div className="dot" onClick={(e) => moveInterior(e.target)}></div>
             <div className="dot" onClick={(e) => moveInterior(e.target)}></div>
-            <div className="dot" onClick={(e) => moveInterior(e.target)}></div>
           </div>
         </div>
       </div>
